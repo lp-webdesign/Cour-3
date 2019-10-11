@@ -1,0 +1,46 @@
+$black : rgb(22, 22, 22);
+$primary-font : 'Montserrat', sans-serif;
+$font-size-base : 16px;
+
+
+.header {
+    background-color: $black;
+    color: rgb(133, 133, 133);
+    font-family: $primary-font ;
+    font-weight: 500;
+    font-size: 0.8rem;
+
+    display: flex;
+
+
+    a {
+        text-decoration: none;
+        color: rgb(133, 133, 133);
+    }
+
+    img {
+        display: inline-block;
+        height: 30px;
+        // padding-left: 50px;
+    }
+
+    &__nav {
+        display: inline-block;
+        margin: auto;
+    }
+
+    &__social {
+        //  padding-right: 50px;
+    }
+
+    ul {
+        display: inline;
+
+        li {
+            display: inline;
+        }
+    }
+    
+}
+
+

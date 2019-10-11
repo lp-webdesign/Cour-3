@@ -1,0 +1,21 @@
+.header {
+  background-color: #161616;
+  color: #858585;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  display: flex; }
+  .header a {
+    text-decoration: none;
+    color: #858585; }
+  .header img {
+    display: inline-block;
+    height: 30px; }
+  .header__nav {
+    display: inline-block;
+    margin: auto; }
+  .header ul {
+    display: inline; }
+    .header ul li {
+      display: inline; }
+
