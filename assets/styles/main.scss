@@ -1,0 +1,32 @@
+:root
+
+
+body {
+  color: black;
+}
+
+.nav_logo {
+  width: 8%;
+}
+
+.header_img {
+  width: 40%;
+}
+
+.navbar ul {
+  max-width: 100%;
+  float: right;
+          li {
+            display: inline-block;
+            color: black;
+          }
+            a {
+              text-decoration: none;
+
+            }
+
+}
+
+h1 {
+  font-size: 50px;
+}
