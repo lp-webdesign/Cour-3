@@ -15,6 +15,10 @@ header{
   width: 100%;
 }
 
+h3{
+  @include font($font : $font--p, $size : 2em, $transform: uppercase, $weight : 800);
+}
+
 .header--nav--list{
   text-align: right;
 }
@@ -29,14 +33,12 @@ header{
   background: $white top / cover url('https://www.offspring.co.uk/blog/wp-content/uploads/2017/10/2017_07_nike_offwhite_40_42_f02_d100_b_Nike14000RGB.jpg');
   padding: 100px;
 }
+
 .homepage--title{
   padding: 50px;
   @include font($font : $font--p, $size : 5em, $transform: uppercase, $weight : 800);
 }
-// .homepage--txt{
-//   padding: 50px;
-//     @include font($font : $font--p, $size : 1em);
-// }
+
 .homepage--btn{
   margin-top: 200px;
   display: block;
@@ -60,4 +62,50 @@ header{
 
 .homepage--slider--list--item-active{
   background: #ffff00;
+}
+
+.informations{
+  padding-top: 100px;
+  padding: 150px;
+}
+.informations--title{
+  margin-bottom: 2em;
+}
+.informations--txt{
+  @include font($font : $font--p, $size : 1.25em, $transform: inital);
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.informations--txt-reavealing{
+  margin-right: 5em;
+}
+
+.informations--txt-ghosting{
+  opacity: .2;
+}
+
+.product{
+  padding: 50px 100px 100px 100px;
+}
+
+.product--list{
+    @include flex($justify : space-around, $wrap : wrap);
+}
+
+.product--list--item{
+  height: 400px;
+  width: 400px;
+  margin-bottom: 4em;
+}
+
+@for $i from 1 through length($picture-list) {
+  .product--list--item:nth-child(#{$i}) {
+    background: #F6F6F6 center / contain no-repeat url(nth($picture-list, $i));
+  }
+}
+
+.product--list--item h5::after{
+  content: "$";
 }

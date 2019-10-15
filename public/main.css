@@ -40,6 +40,15 @@ section {
 header {
   width: 100%; }
 
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #111111;
+  letter-spacing: normal;
+  text-align: left; }
+
 .header--nav--list {
   text-align: right; }
 
@@ -89,4 +98,77 @@ header {
 
 .homepage--slider--list--item-active {
   background: #ffff00; }
+
+.informations {
+  padding-top: 100px;
+  padding: 150px; }
+
+.informations--title {
+  margin-bottom: 2em; }
+
+.informations--txt {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25em;
+  text-transform: inital;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: normal;
+  text-align: left;
+  width: 45%;
+  display: inline-block;
+  vertical-align: top; }
+
+.informations--txt-reavealing {
+  margin-right: 5em; }
+
+.informations--txt-ghosting {
+  opacity: .2; }
+
+.product {
+  padding: 50px 100px 100px 100px; }
+
+.product--list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.product--list--item {
+  height: 400px;
+  width: 400px;
+  margin-bottom: 4em; }
+
+.product--list--item:nth-child(1) {
+  background: #F6F6F6 center/contain no-repeat url("https://c.static-nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/thti64qndeddwhlfzelj/the-ten-air-jordan-1-off-white-release-date.jpg"); }
+
+.product--list--item:nth-child(2) {
+  background: #F6F6F6 center/contain no-repeat url("https://c.static-nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/qg0petlgngahlgo4dx0w/nike-the-ten-presto-off-white-release-date.jpg"); }
+
+.product--list--item:nth-child(3) {
+  background: #F6F6F6 center/contain no-repeat url("https://c.static-nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/szhkxrvejruxq6negqda/nike-the-ten-air-max-90-off-white-release-date.jpg"); }
+
+.product--list--item:nth-child(4) {
+  background: #F6F6F6 center/contain no-repeat url("https://c.static-nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/n0ofy1pxn6hu8dfzx2hu/nike-the-ten-sb-blazer-mid-off-white-release-date.jpg"); }
+
+.product--list--item:nth-child(5) {
+  background: #F6F6F6 center/contain no-repeat url("https://c.static-nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/la19jqqpmlwmjo4rcokx/nike-the-ten-air-vapormax-off-white-release-date.jpg"); }
+
+.product--list--item:nth-child(6) {
+  background: #F6F6F6 center/contain no-repeat url("https://c.static-nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/et0yjfqthebjwqxt4qvh/nike-the-ten-air-force-1-low-off-white-release-date.jpg"); }
+
+.product--list--item:nth-child(7) {
+  background: #F6F6F6 center/contain no-repeat url("https://c.static-nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/zsbgytzvanv0zapacgaw/nike-the-ten-react-hyperdunk-off-white-release-date.jpg"); }
+
+.product--list--item:nth-child(8) {
+  background: #F6F6F6 center/contain no-repeat url("https://c.static-nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/gvpq5oiwdcef7giwvoxb/nike-the-ten-zoom-fly-off-white-release-date.jpg"); }
+
+.product--list--item:nth-child(9) {
+  background: #F6F6F6 center/contain no-repeat url("https://www.lesitedelasneaker.com/wp-content/plugins/justified-image-grid/timthumb.php?src=https%3A%2F%2Fwww.lesitedelasneaker.com%2Fwp-content%2Fimages%2F2018%2F04%2Fconverse-off-white-chuck-70-162204C-102.jpg&h=490&q=90&f=.jpg"); }
+
+.product--list--item:nth-child(10) {
+  background: #F6F6F6 center/contain no-repeat url("https://c.static-nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/nyjnox9gea8nko3ild6s/nike-the-ten-air-max-97-off-white-release-date.jpg"); }
+
+.product--list--item h5::after {
+  content: "$"; }
 
