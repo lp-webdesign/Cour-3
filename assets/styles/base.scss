@@ -1,0 +1,28 @@
+$black : rgb(22, 22, 22);
+$white : rgb(241, 241, 241);
+// $white : rgb(250, 250, 250);
+$primary-color: rgb(255, 27, 114);
+// $primary-color:#9E65AC;
+
+$primary-font : 'Montserrat', sans-serif;
+$font-size-base : 16px;
+
+$section-space:5rem;
+$gutters:11.25rem;
+
+body {
+    font-family: $primary-font;
+}
+
+
+
+h2 {
+    font-family: $primary-font;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $black;
+}
+
+.d-block {
+    display: block;
+}

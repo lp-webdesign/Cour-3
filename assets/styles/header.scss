@@ -1,9 +1,3 @@
-$black : rgb(22, 22, 22);
-$white : rgb(241, 241, 241);
-$primary-color: rgb(255, 27, 114);
-
-$primary-font : 'Montserrat', sans-serif;
-$font-size-base : 16px;
 
 
 // TEST : nav with inline-block (no flex)
@@ -81,20 +75,22 @@ $font-size-base : 16px;
 
             .header__nav-new {
                 position: relative;
+
+                &::after {
+                    content: 'NEW';
+                    color: $primary-color;
+                    position: absolute;
+                    top:-12px;              
+                    right: -25px; 
+                    font-size: 0.6rem;
+                    font-weight: 500;
+                    padding: 4px 4px;
+                    background-color: rgb(34, 34, 34);
+                    box-shadow: 2px 2px 2px rgb(20, 20, 20);
+                    border-radius: 2px;
+                }
             }
-            .header__nav-new::after {
-                content: 'NEW';
-                color: $primary-color;
-                position: absolute;
-                top:-12px;              
-                right: -25px; 
-                font-size: 0.6rem;
-                font-weight: 500;
-                padding: 4px 4px;
-                background-color: rgb(34, 34, 34);
-                box-shadow: 2px 2px 2px rgb(20, 20, 20);
-                border-radius: 2px;
-            }
+            
         }
 
         
@@ -123,10 +119,10 @@ $font-size-base : 16px;
     background-color: $black;
     height: calc(100vh - 100px);
     display: flex;
-    justify-content: center  ;
+    justify-content: space-between  ;
     align-items: center;
     font-family: $primary-font;
-    
+    padding:0 $gutters;
 
     &__text {
         width: 50%;
@@ -141,10 +137,6 @@ $font-size-base : 16px;
         padding-bottom: 40px;
         line-height: 3.5rem;
 
-        .d-block {
-            display: block;
-        }
-        
     }
 
     &__subtitle {
@@ -152,11 +144,10 @@ $font-size-base : 16px;
     }
 
     &__img {
-        // width: 50%;
         img {
-            height: 400px;
+            height: 450px;
         }
-        
+      
     }
 
 
