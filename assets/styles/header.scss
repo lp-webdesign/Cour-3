@@ -1,36 +1,111 @@
 $black : rgb(22, 22, 22);
+$white : rgb(241, 241, 241);
+$primary-color: rgb(255, 27, 114);
+
 $primary-font : 'Montserrat', sans-serif;
 $font-size-base : 16px;
 
 
+// TEST : nav with inline-block (no flex)
+// .header {
+//     background-color: $black;
+//     color: rgb(133, 133, 133);
+//     font-family: $primary-font ;
+//     font-weight: 500;
+//     font-size: 0.8rem;
+
+
+//     a {
+//         text-decoration: none;
+//         color: rgb(133, 133, 133);
+//     }
+
+//     img {
+//         display: inline-block;
+//         height: 30px;
+//         // padding-left: 50px;
+//     }
+
+//     &__nav {
+//         display: inline-block;
+//         margin: auto;
+//     }
+
+//     &__social {
+//         //  padding-right: 50px;
+//     }
+
+//     ul {
+//         display: inline;
+
+//         li {
+//             display: inline;
+//         }
+//     }
+    
+// }
+
+
+
 .header {
     background-color: $black;
-    color: rgb(133, 133, 133);
+    color: rgb(161, 161, 161);
     font-family: $primary-font ;
-    font-weight: 500;
-    font-size: 0.8rem;
-
+    font-weight: 700;
+    font-size: 1rem;
     display: flex;
+    justify-content: space-around;
+    // justify-content: center;
+    align-items: center;
+    height: 100px;
+
 
 
     a {
         text-decoration: none;
         color: rgb(133, 133, 133);
+        margin: 15px;
     }
 
     img {
         display: inline-block;
-        height: 30px;
-        // padding-left: 50px;
+        height: 60px;
     }
 
     &__nav {
         display: inline-block;
-        margin: auto;
+        // margin: 300px 300px;
+        
+
+        ul {
+
+            .header__nav-new {
+                position: relative;
+            }
+            .header__nav-new::after {
+                content: 'NEW';
+                color: $primary-color;
+                position: absolute;
+                top:-12px;              
+                right: -25px; 
+                font-size: 0.6rem;
+                font-weight: 500;
+                padding: 4px 4px;
+                background-color: rgb(34, 34, 34);
+                box-shadow: 2px 2px 2px rgb(20, 20, 20);
+                border-radius: 2px;
+            }
+        }
+
+        
     }
 
     &__social {
-        //  padding-right: 50px;
+
+            li {
+                margin:10px;
+            }
+        
     }
 
     ul {
@@ -44,3 +119,45 @@ $font-size-base : 16px;
 }
 
 
+.hero {
+    background-color: $black;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center  ;
+    align-items: center;
+    font-family: $primary-font;
+    
+
+    &__text {
+        width: 50%;
+        margin-right: 50px;
+        
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 3rem;
+        color: $white;
+        padding-bottom: 40px;
+        line-height: 3.5rem;
+
+        .d-block {
+            display: block;
+        }
+        
+    }
+
+    &__subtitle {
+        color: rgb(161, 161, 161);
+    }
+
+    &__img {
+        // width: 50%;
+        img {
+            height: 400px;
+        }
+        
+    }
+
+
+}
