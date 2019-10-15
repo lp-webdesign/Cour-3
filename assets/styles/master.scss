@@ -1,5 +1,45 @@
-body{
-  height: 100%;
-  width: 50%;
+@import "./lib/_fonts.scss";
+@import "./lib/_var.scss";
+@import "./lib/_mixin.scss";
+@import "./lib/_reset.scss";
+
+
+h1{
+  @include font($font : $font--s, $size : 24px);
+  padding: 1em;
 }
-//here
+section{
+  min-height: 100%;
+}
+header{
+  width: 100%;
+}
+
+.header--nav--list{
+  text-align: right;
+}
+
+.header--nav--list--item{
+  @include font($font : $font--s, $size : 16px);
+  display: inline;
+  margin: 0 1em;
+}
+
+.homepage{
+  background: url('https://www.offspring.co.uk/blog/wp-content/uploads/2017/10/2017_07_nike_offwhite_40_42_f02_d100_b_Nike14000RGB.jpg');
+  background-size: cover;
+  padding: 100px;
+}
+.homepage--title{
+  padding: 100px;
+  @include font($font : $font--p, $size : 5em, $transform: uppercase, $weight : 800);
+}
+// .homepage--txt{
+//   padding: 0 200px;
+//     @include font($font : $font--p, $size : 1em);
+// }
+.homepage--btn{
+  padding: 1em;
+  background: red;
+  text-align: center;
+}
