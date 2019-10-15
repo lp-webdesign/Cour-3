@@ -55,12 +55,11 @@ header {
   margin: 0 1em; }
 
 .homepage {
-  background: url("https://www.offspring.co.uk/blog/wp-content/uploads/2017/10/2017_07_nike_offwhite_40_42_f02_d100_b_Nike14000RGB.jpg");
-  background-size: cover;
+  background: #ffffff top/cover url("https://www.offspring.co.uk/blog/wp-content/uploads/2017/10/2017_07_nike_offwhite_40_42_f02_d100_b_Nike14000RGB.jpg");
   padding: 100px; }
 
 .homepage--title {
-  padding: 100px;
+  padding: 50px;
   font-family: "Montserrat", sans-serif;
   font-size: 5em;
   text-transform: uppercase;
@@ -70,7 +69,24 @@ header {
   text-align: left; }
 
 .homepage--btn {
+  margin-top: 200px;
+  display: block;
   padding: 1em;
-  background: red;
+  background: #ffff00;
   text-align: center; }
+
+.homepage--slider--list {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.homepage--slider--list--item {
+  height: 10px;
+  width: 50px;
+  background: red;
+  margin: 0 1em; }
+
+.homepage--slider--list--item-active {
+  background: #ffff00; }
 

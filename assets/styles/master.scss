@@ -26,20 +26,38 @@ header{
 }
 
 .homepage{
-  background: url('https://www.offspring.co.uk/blog/wp-content/uploads/2017/10/2017_07_nike_offwhite_40_42_f02_d100_b_Nike14000RGB.jpg');
-  background-size: cover;
+  background: $white top / cover url('https://www.offspring.co.uk/blog/wp-content/uploads/2017/10/2017_07_nike_offwhite_40_42_f02_d100_b_Nike14000RGB.jpg');
   padding: 100px;
 }
 .homepage--title{
-  padding: 100px;
+  padding: 50px;
   @include font($font : $font--p, $size : 5em, $transform: uppercase, $weight : 800);
 }
 // .homepage--txt{
-//   padding: 0 200px;
+//   padding: 50px;
 //     @include font($font : $font--p, $size : 1em);
 // }
 .homepage--btn{
+  margin-top: 200px;
+  display: block;
   padding: 1em;
-  background: red;
+  background: #ffff00;
   text-align: center;
+}
+
+.homepage--slider--list{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.homepage--slider--list--item{
+  height: 10px;
+  width: 50px;
+  background: red;
+  margin: 0 1em;
+}
+
+.homepage--slider--list--item-active{
+  background: #ffff00;
 }
