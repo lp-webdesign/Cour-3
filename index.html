@@ -15,11 +15,10 @@
       <h1 class="header--title">SNEAKERS.STORE</h1>
       <nav class="header--nav">
         <ul class="header--nav--list">
-          <li class="header--nav--list--item"><a href="#">Home</a></li>
-          <li class="header--nav--list--item"><a href="#">Products</a></li>
-          <li class="header--nav--list--item"><a href="#">Partie3</a></li>
-          <li class="header--nav--list--item"><a href="#">Partie4</a></li>
-          <li class="header--nav--list--item"><a href="#">Partie5</a></li>
+          <li class="header--nav--list--item"><a href="#informations">Informations</a></li>
+          <li class="header--nav--list--item"><a href="#products">Products</a></li>
+          <li class="header--nav--list--item"><a href="#textbook">TEXTBOOK</a></li>
+          <li class="header--nav--list--item"><a href="#">_______</a></li>
           <li class="header--nav--list--item header--nav--list--item-icon"><a href="#"><img src="" alt=""></a></li>
           <li class="header--nav--list--item header--nav--list--item-icon"><a href="#"><img src="" alt=""></a></li>
         </ul>
@@ -27,22 +26,26 @@
       </header>
       <section class="homepage">
         <h2 class="homepage--title">SNEAKERS store for sneakers fans</h2>
-        <a title="acces_au_produit" class="homepage--btn" href="#">SHOP 'THE TEN' --- SHOP 'THE TEN' --- SHOP 'THE TEN' --- SHOP 'THE TEN' --- SHOP 'THE TEN' --- SHOP 'THE TEN' --- SHOP 'THE TEN' --- </a>
+        <a title="acces_au_produit" class="homepage--btn" href="#products">SHOP 'THE TEN' --- SHOP 'THE TEN' --- SHOP 'THE TEN' --- SHOP 'THE TEN' --- SHOP 'THE TEN' --- SHOP 'THE TEN' --- SHOP 'THE TEN' --- </a>
         <ol class="homepage--slider--list">
           <li class="homepage--slider--list--item homepage--slider--list--item-active"><span></span></li>
           <li class="homepage--slider--list--item"><span></span></li>
           <li class="homepage--slider--list--item"><span></span></li>
         </ol>
       </section>
-      <div class="informations">
+      <section id="informations" class="informations">
         <h3 class="informations--title">The Ten divides itself into two groups of five, each designed with its own approach.</h3>
         <p class="informations--txt informations--txt-reavealing">"REVEALING" uncovers the emotional details of each icon, offering a deconstructed, assembly-line feel that examines their past, present, and future. The X-ACTO blade becomes a primary tool, cutting away sections of the original example, using the subtext that’s always been inside to create something new and yet immediately familiar from what typically goes unseen. Nike Blazer Mid, Air Jordan I, Nike Air Max 90, Nike Air Presto, Nike Air VaporMax.</p>
         <p class="informations--txt informations--txt-ghosting">"GHOSTING" uses a transparent outer layer to create a seamless effect, blurring the lines that make us think we know a shoe, stripping away elements to find a baseline. Each icon is reconstructed from an airy, ethereal material palette; an uncensored look at the shoe’s makeup that demonstrations its importance while challenging its original expression. Converse Chuck Taylor, Nike Air Force 1, Nike React Hyperdunk, Nike Air Max 97, Nike Zoom Vaporfly.</p>
-      </div>
-      <section class="product">
-        <h3 class="product--title">Products</h2>
+        <span class="informations--parralax"></span>
+      </section>
+      <section id="products" class="product">
+        <h3 class="product--title">Products</h3>
         <div class="product--sort">
-          <button type="button" name="button"></button>
+          <button type="button" name="button">
+            <span>Sort by</span>
+            <!-- icon dropdown -->
+          </button>
         </div>
         <ul class="product--list">
           <li class="product--list--item">
@@ -86,6 +89,22 @@
             <h5>190</h5>
           </li>
         </ul>
+      </section>
+
+      <section id="textbook" class="textbook">
+        <h3 class="textbook--title">TEXTBOOK</h3>
+        <aside class="textbook--grp">
+          <ol class="textbook--list">
+            <li class="textbook--list--item"></li>
+            <li class="textbook--list--item"></li>
+            <li class="textbook--list--item"></li>
+            <li class="textbook--list--item"></li>
+          </ol>
+        </aside>
+        <footer class="textbook--footer">
+          <p class="textbook--txt">Read the official Nike x Off-White book, detailing Virgil Abloh's process for deconstructing and reimagining ten Nike icons.</p>
+          <a title="read the book" class="textbook--link" href="https://content.nike.com/content/dam/one-nike/en_us/season-2018-su/NikeLab/TEN/TEXTBOOK.pdf">Read 'TEXTBOOK'</a>
+        </footer>
       </section>
 
 </body>

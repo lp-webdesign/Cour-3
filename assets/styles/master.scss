@@ -2,22 +2,7 @@
 @import "./lib/_var.scss";
 @import "./lib/_mixin.scss";
 @import "./lib/_reset.scss";
-
-
-h1{
-  @include font($font : $font--s, $size : 24px);
-  padding: 1em;
-}
-section{
-  min-height: 100%;
-}
-header{
-  width: 100%;
-}
-
-h3{
-  @include font($font : $font--p, $size : 2em, $transform: uppercase, $weight : 800);
-}
+@import "./lib/_global.scss";
 
 .header--nav--list{
   text-align: right;
@@ -35,7 +20,7 @@ h3{
 }
 
 .homepage--title{
-  padding: 50px;
+  padding: 50px 200px 50px 50px;
   @include font($font : $font--p, $size : 5em, $transform: uppercase, $weight : 800);
 }
 
@@ -43,7 +28,7 @@ h3{
   margin-top: 200px;
   display: block;
   padding: 1em;
-  background: #ffff00;
+  background: $yellow;
   text-align: center;
 }
 
@@ -65,17 +50,24 @@ h3{
 }
 
 .informations{
-  padding-top: 100px;
-  padding: 150px;
+  padding: 100px;
 }
 .informations--title{
   margin-bottom: 2em;
 }
 .informations--txt{
-  @include font($font : $font--p, $size : 1.25em, $transform: inital);
+  @include font($font : $font--p, $size : 1.25em);
   width: 45%;
   display: inline-block;
   vertical-align: top;
+  margin-bottom: 100px;
+}
+
+.informations--parralax{
+  display: block;
+  height: 400px;
+  transform: scale(1, -1);
+  background: #ffffff top / cover no-repeat fixed url('https://c.static-nike.com/a/images/w_1920,c_limit,f_auto/fnrxcwespx6qfjphbpcb/nike-the-ten-air-max-97-off-white-release-date.jpg');
 }
 
 .informations--txt-reavealing{
@@ -83,10 +75,10 @@ h3{
 }
 
 .informations--txt-ghosting{
-  opacity: .2;
+  color: #d4d4d4;
 }
 
-.product{
+.product, .textbook{
   padding: 50px 100px 100px 100px;
 }
 
@@ -98,14 +90,81 @@ h3{
   height: 400px;
   width: 400px;
   margin-bottom: 4em;
+  padding: 1em;
 }
 
-@for $i from 1 through length($picture-list) {
+@for $i from 1 through length($product--list--item-picture) {
   .product--list--item:nth-child(#{$i}) {
-    background: #F6F6F6 center / contain no-repeat url(nth($picture-list, $i));
+    background: #F6F6F6 center / contain no-repeat url(nth($product--list--item-picture, $i));
   }
 }
 
 .product--list--item h5::after{
   content: "$";
+}
+
+.product--sort{
+    text-align: right;
+    padding: 2em 0;
+}
+
+.product--sort button{
+    padding: 1em 2em;
+    @include font($font : $font--p, $size : .8em);
+    border: 1px $black solid;
+}
+
+.textbook--grp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  height: 70vh;
+}
+
+.textbook--list{
+  position: relative;
+  display: flex;
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.textbook--list:hover::after{
+  content: "scroll";
+  position: absolute;
+  @include abs($bottom : -20%, $right: 50%);
+  @include font($color : transparent, $font : $font--p, $size : 10em, $transform: uppercase, $weight : 800);
+  -webkit-text-stroke: 2px $black;
+}
+
+.textbook--list--item{
+  min-height: 100%;
+  min-width: 70%;
+}
+.textbook--list::-webkit-scrollbar {
+    display: none;
+  }
+
+@for $i from 1 through 4 {
+  .textbook--list--item:nth-child(#{$i}) {
+    background: #ffffff center / contain no-repeat url(#{$textbook--list--item-picture + '#{$i+1}' + '.jpg' });
+  }
+}
+
+.textbook--txt{
+  display: inline-block;
+  text-align: left;
+  width : 70%;
+  @include font($font : $font--p, $size : .9em);
+}
+
+.textbook--link{
+  display: inline-block;
+  width: 29%;
+  text-align: right;
+  vertical-align: baseline;
+  background: $yellow;
+  padding: 1em;
 }

@@ -5,6 +5,7 @@
 }
 html,body,main{
   height: 100%;
+   width: 100%;
 }
 
 html{
@@ -28,3 +29,12 @@ a, a:visited, a:hover, a:focus{
 strong, i{
   display: block;
 }
+
+button, button:focus{
+  border: none;
+  background: none;
+  outline-color: none;
+}
+
+::-moz-selection { background: $yellow; }
+::selection { background: $yellow; }

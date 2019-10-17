@@ -1,0 +1,16 @@
+h1{
+  @include font($font : $font--s, $size : 24px);
+  padding: 1em;
+}
+
+section{
+  min-height: 100%;
+}
+
+header{
+  width: 100%;
+}
+
+h3{
+  @include font($font : $font--p, $size : 2em, $transform: uppercase, $weight : 800);
+}

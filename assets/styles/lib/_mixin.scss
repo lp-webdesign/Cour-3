@@ -6,7 +6,7 @@
   flex-wrap: $wrap;
 }
 
-@mixin font($font: $font--d, $size : initial, $transform: lowercase, $weight : 400, $color : $black, $ls: normal, $align: left){
+@mixin font($font: $font--d, $size : initial, $transform: unset, $weight : 400, $color : $black, $ls: normal, $align: left){
   font-family: $font;
   font-size: $size;
   text-transform: $transform;

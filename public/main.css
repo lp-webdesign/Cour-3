@@ -6,7 +6,8 @@
   box-sizing: border-box; }
 
 html, body, main {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 html {
   scroll-behavior: smooth; }
@@ -24,10 +25,21 @@ a, a:visited, a:hover, a:focus {
 strong, i {
   display: block; }
 
+button, button:focus {
+  border: none;
+  background: none;
+  outline-color: none; }
+
+::-moz-selection {
+  background: #ffff00; }
+
+::selection {
+  background: #ffff00; }
+
 h1 {
   font-family: "Space Mono", monospace;
   font-size: 24px;
-  text-transform: lowercase;
+  text-transform: unset;
   font-weight: 400;
   color: #111111;
   letter-spacing: normal;
@@ -55,7 +67,7 @@ h3 {
 .header--nav--list--item {
   font-family: "Space Mono", monospace;
   font-size: 16px;
-  text-transform: lowercase;
+  text-transform: unset;
   font-weight: 400;
   color: #111111;
   letter-spacing: normal;
@@ -68,7 +80,7 @@ h3 {
   padding: 100px; }
 
 .homepage--title {
-  padding: 50px;
+  padding: 50px 200px 50px 50px;
   font-family: "Montserrat", sans-serif;
   font-size: 5em;
   text-transform: uppercase;
@@ -100,8 +112,7 @@ h3 {
   background: #ffff00; }
 
 .informations {
-  padding-top: 100px;
-  padding: 150px; }
+  padding: 100px; }
 
 .informations--title {
   margin-bottom: 2em; }
@@ -109,22 +120,29 @@ h3 {
 .informations--txt {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25em;
-  text-transform: inital;
+  text-transform: unset;
   font-weight: 400;
   color: #111111;
   letter-spacing: normal;
   text-align: left;
   width: 45%;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-bottom: 100px; }
+
+.informations--parralax {
+  display: block;
+  height: 400px;
+  transform: scale(1, -1);
+  background: #ffffff top/cover no-repeat fixed url("https://c.static-nike.com/a/images/w_1920,c_limit,f_auto/fnrxcwespx6qfjphbpcb/nike-the-ten-air-max-97-off-white-release-date.jpg"); }
 
 .informations--txt-reavealing {
   margin-right: 5em; }
 
 .informations--txt-ghosting {
-  opacity: .2; }
+  color: #d4d4d4; }
 
-.product {
+.product, .textbook {
   padding: 50px 100px 100px 100px; }
 
 .product--list {
@@ -137,7 +155,8 @@ h3 {
 .product--list--item {
   height: 400px;
   width: 400px;
-  margin-bottom: 4em; }
+  margin-bottom: 4em;
+  padding: 1em; }
 
 .product--list--item:nth-child(1) {
   background: #F6F6F6 center/contain no-repeat url("https://c.static-nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/thti64qndeddwhlfzelj/the-ten-air-jordan-1-off-white-release-date.jpg"); }
@@ -171,4 +190,92 @@ h3 {
 
 .product--list--item h5::after {
   content: "$"; }
+
+.product--sort {
+  text-align: right;
+  padding: 2em 0; }
+
+.product--sort button {
+  padding: 1em 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  text-transform: unset;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: normal;
+  text-align: left;
+  border: 1px #111111 solid; }
+
+.textbook--grp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  height: 70vh; }
+
+.textbook--list {
+  position: relative;
+  display: flex;
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden; }
+
+.textbook--list:hover::after {
+  content: "scroll";
+  position: absolute;
+  position: absolute;
+  z-index: 2;
+  top: auto;
+  right: 50%;
+  bottom: -20%;
+  left: auto;
+  transform: translateX(50%) translateY(-50%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 10em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: transparent;
+  letter-spacing: normal;
+  text-align: left;
+  -webkit-text-stroke: 2px #111111; }
+
+.textbook--list--item {
+  min-height: 100%;
+  min-width: 70%; }
+
+.textbook--list::-webkit-scrollbar {
+  display: none; }
+
+.textbook--list--item:nth-child(1) {
+  background: #ffffff center/contain no-repeat url(https://editorial.designtaxi.com/editorial-images/news-NikeTEXTBOOK300518/Nike-Virgil-Abloh-OFF-WHITE-The-Ten-Reconstructed-Free-Design-Textbook-2.jpg); }
+
+.textbook--list--item:nth-child(2) {
+  background: #ffffff center/contain no-repeat url(https://editorial.designtaxi.com/editorial-images/news-NikeTEXTBOOK300518/Nike-Virgil-Abloh-OFF-WHITE-The-Ten-Reconstructed-Free-Design-Textbook-3.jpg); }
+
+.textbook--list--item:nth-child(3) {
+  background: #ffffff center/contain no-repeat url(https://editorial.designtaxi.com/editorial-images/news-NikeTEXTBOOK300518/Nike-Virgil-Abloh-OFF-WHITE-The-Ten-Reconstructed-Free-Design-Textbook-4.jpg); }
+
+.textbook--list--item:nth-child(4) {
+  background: #ffffff center/contain no-repeat url(https://editorial.designtaxi.com/editorial-images/news-NikeTEXTBOOK300518/Nike-Virgil-Abloh-OFF-WHITE-The-Ten-Reconstructed-Free-Design-Textbook-5.jpg); }
+
+.textbook--txt {
+  display: inline-block;
+  text-align: left;
+  width: 70%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  text-transform: unset;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: normal;
+  text-align: left; }
+
+.textbook--link {
+  display: inline-block;
+  width: 29%;
+  text-align: right;
+  vertical-align: baseline;
+  background: #ffff00;
+  padding: 1em; }
 
