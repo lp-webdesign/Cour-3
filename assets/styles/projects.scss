@@ -28,16 +28,34 @@
     &__images {
         display: flex;
         align-items: center;
+        // position: relative;
 
-        .img-container {
+        &--container {
             position: relative;
+
+            &:hover::after {
+                // position: absolute;
+                bottom:-60px;
+                // display: inline;
+                opacity: 1;
+                transition: 0.7s;
+            }  
+
+            &::after {
+                content: "Haec igitur lex in amicitia sanciatur, ut neque rogemus res turpes nec faciamus rogati.";
+                // color: white;
+                position: absolute;
+                bottom:0;
+                left: 0;
+                // display: none;
+                opacity: 0;
+                transition: 0.7s;
+    
+                  
+            }
         }
         
-        &::after {
-            content: "Haec igitur lex in amicitia sanciatur, ut neque rogemus res turpes nec faciamus rogati.";
-            color: white;
-            position: absolute;
-        }
+        
         
         img {
             height: 290px;
@@ -45,12 +63,15 @@
             box-shadow: 2px 2px 10px rgb(75, 75, 75);
             border-radius: 2px;
             
-            
-
             &:nth-child(1) {
+                transition: 0.7s;
+            }
+
+            &:nth-child(1):hover {
                 height: 310px;
                 border-bottom: 0.5rem solid $primary-color;
                 border-radius: 2px;
+                transition: 0.7s;
                 
                 
             }
