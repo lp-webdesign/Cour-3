@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,800|PT+Serif&display=swap');
+$black: #333333;
+$white: #F6F6F6;
+$grey: #FAFBFF;
 body {
-    background-color: lightgray;
+    background-color: $white;
 }
 
 header {
+    height: 100vh;
+    // background: url('../../public/images/architectural.jpg');
     .navbar {
+        position: absolute;
+        width: 100%;
         h1 {
             display: inline-block;
             margin: 20px 20px 20px 20px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: capitalize;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 800;
+            color: $black;
         }
         nav {
             display: inline-block;
@@ -18,8 +32,12 @@ header {
                     margin: 0 20px 0 20px;
                     a {
                         text-decoration: none;
+                        font-family: 'Montserrat', sans-serif;
+                        text-transform: capitalize;
+                        font-size: 12px;
+                        color: $black;
                         &:visited {
-                            color: black;
+                            color: $black;
                             text-decoration: none;
                         }
                         &:hover {
@@ -29,6 +47,52 @@ header {
                     }
                 }
             }
+        }
+    }
+    img {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    h3 {
+        font-size: 10px;
+        font-family: 'PT Serif', serif;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 10px;
+    }
+    a {
+        font-size: 10px;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &:visited {
+            color: $black;
+            text-decoration: none;
+        }
+        &:hover {
+            color: #4f4f4f;
+            text-decoration: none;
+        }
+        .fa-play {
+            width: 25px;
+            height: 25px;
+            margin: 0 10px;
         }
     }
 }
