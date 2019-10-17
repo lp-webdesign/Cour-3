@@ -1,0 +1,58 @@
+nav {
+  z-index: 1;
+  height: 75px;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #0B0B0B;
+  text-transform: uppercase; }
+  nav .first-nav {
+    margin-right: 70px; }
+    nav .first-nav li {
+      display: inline;
+      padding-right: 20px; }
+    nav .first-nav a {
+      text-decoration: none;
+      color: white; }
+      nav .first-nav a:hover {
+        text-decoration: underline; }
+  nav .second-nav li {
+    display: inline;
+    padding-right: 15px; }
+  nav .second-nav a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #8B939B; }
+
+body {
+  background-color: black; }
+
+.hero {
+  height: calc(100vh-75px); }
+  .hero div {
+    position: relative; }
+  .hero h1 {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    z-index: 2;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: 0;
+    right: 0;
+    font-size: 50px; }
+  .hero img {
+    width: 100vw; }
+
+.starship {
+  background-color: black;
+  width: 100vw;
+  height: 200vh;
+  z-index: 2;
+  color: white; }
+  .starship .background-video video {
+    width: 55%;
+    padding-left: 35rem; }
+

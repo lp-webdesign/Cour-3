@@ -1,0 +1,36 @@
+nav {
+    z-index: 1;
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #0B0B0B;
+    text-transform: uppercase;
+    .first-nav {
+        margin-right: 70px;
+        li {
+            display: inline;
+            padding-right: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .second-nav {
+        li {
+            display: inline;
+            padding-right: 15px;
+        }
+        a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #8B939B;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import "./nav.scss";
+@import "./font.scss";
+body {
+    background-color: black;
+}
+
+.hero {
+    height: calc(100vh-75px);
+    div {
+        position: relative;
+    }
+    h1 {
+        color: white;
+        text-align: center;
+        margin-top: auto;
+        z-index: 2;
+        position: absolute;
+        top: calc(50% - 75px);
+        left: 0;
+        right: 0;
+        font-size: 50px;
+    }
+    img {
+        width: 100vw;
+    }
+}
+
+.starship {
+    background-color: black;
+    width: 100vw;
+    height: 200vh;
+    z-index: 2;
+    color: white;
+    .background-video {
+        video {
+            width: 55%;
+            padding-left: 35rem;
+        }
+    }
+}
