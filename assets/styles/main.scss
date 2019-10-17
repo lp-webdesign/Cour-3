@@ -19,13 +19,11 @@ a {
 header {
     width: 100%;
     font-family: 'Montserrat';
+    position: fixed;
+    transition: $transition;
 }
 section {
     min-height: 100vh;
-}
-header{
-    position: fixed;
-    background: $black;
 }
 nav {
     display: flex;
@@ -42,9 +40,13 @@ ul {
 .nav_el {
     display: inline-block;
     padding: 1rem;
+    a:hover {
+        transition: $transition;
+        opacity: 0.5;
+    }
 }
 .hero {
-    background-image: url("https://cdn.pixabay.com/photo/2017/05/15/19/07/black-caviar-2315832_1280.jpg");
+    background-image: url("https://images.pexels.com/photos/2098143/pexels-photo-2098143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -56,30 +58,29 @@ ul {
     align-items: center;
     justify-content: center;
     h2 {
-        background-color: $gold;
-        font-size: 30px;
-        width: 80vw;
-        padding: 1rem;
-        
-    }
-    p {
-        width: 80vw;
         background-color: $white;
-        padding: 1rem;
+        font-size: 50px;
+        width: 600px;
+        padding: 2rem;
+        text-align: left;
+    }
+    strong {
+        font-size: 60px;
     }
     button {
         margin-top: 3rem;
-        padding: 0.5rem 1rem;
+        padding: 1rem;
         color: $black;
         font-weight: normal;
-        background-color: $gold;
-        font-size: 16px;
+        background-color: $white;
+        font-size: 1rem;
         border: none;
-        border-radius: 30px;
-        transition: 0.5s ease;
+        transition: $transition;
+        width: 200px;
     }
     button:hover {
-        border-radius: 0px;
-        font-weight: bolder;
+        color: $white;
+        background-color: $red;
+        width: 220px;
     }
 }
