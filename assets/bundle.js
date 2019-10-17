@@ -1,13 +1,9 @@
 import "./styles/main.scss";
+import Nav from "./nav.js" ;
 import Slider from "./slider.js" ;
-import $ from "jquery";
 
-$(window).bind( "scroll", function() {
-    if( $(window).scrollTop() > 0 ) 
-        $('header').css('background', '#d33641');
-    else
-        $('header').css('background', 'transparent');
-});
-
+var nav = new Nav();
+nav.init();
+nav.btn();
 var slider = new Slider();
 slider.init();

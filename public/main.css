@@ -1,5 +1,6 @@
 * {
-  font-family: 'Montserrat'; }
+  font-family: 'Montserrat';
+  scroll-behavior: smooth; }
 
 html, body {
   margin: 0;
@@ -10,15 +11,20 @@ html, body {
 strong {
   font-weight: bolder; }
 
+button {
+  outline: none; }
+
 a {
   text-decoration: none;
   color: #fff; }
 
+/*Header-------------------------------------------------------------------*/
 header {
   width: 100%;
   font-family: 'Montserrat';
   position: fixed;
-  transition: 0.5s ease; }
+  transition: 0.5s ease;
+  z-index: 10; }
 
 section {
   min-height: 100vh; }
@@ -27,13 +33,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around; }
+  nav ul {
+    position: relative;
+    right: 0; }
 
 h1 {
   font-size: 30px; }
-
-ul {
-  position: relative;
-  right: 0; }
 
 .nav_el {
   display: inline-block;
@@ -53,7 +58,8 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: 0.5s ease; }
   .hero h2 {
     background-color: #fff;
     font-size: 50px;
@@ -76,4 +82,88 @@ ul {
     color: #fff;
     background-color: #d33641;
     width: 220px; }
+
+.hero_slider {
+  position: absolute;
+  bottom: 10vh; }
+  .hero_slider .slider_dot {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    display: inline-block;
+    border-radius: 100px;
+    margin: 5px;
+    opacity: 0.5;
+    transition: 0.5s ease; }
+  .hero_slider .dot1 {
+    opacity: 1; }
+
+/*Blog-------------------------------------------------------------------*/
+#articles h2 {
+  text-align: center;
+  padding-top: 6rem;
+  font-weight: bolder;
+  font-size: 30px; }
+
+#articles div {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+article {
+  color: #fff;
+  width: 475px;
+  height: 275px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.maki {
+  background-image: url("https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.sushi {
+  background-image: url("https://images.pexels.com/photos/858501/pexels-photo-858501.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.sashimi {
+  background-image: url("https://images.pexels.com/photos/1683545/pexels-photo-1683545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.yakitoris {
+  background-image: url("https://static.750g.com/images/1200-630/f2fb706bee4aaa490a474e48288379a6/brochettes-yakitori.jpeg"); }
+
+/*Footer-------------------------------------------------------------------*/
+footer {
+  background-color: #d33641; }
+  footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; }
+
+.footer_title {
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 25px;
+  text-align: center;
+  padding: 1rem;
+  transition: 0.5s ease; }
+
+.footer_title:hover {
+  opacity: 0.5; }
+
+.footer_icon {
+  width: 18px;
+  display: inline-block;
+  padding: 1rem;
+  transition: 0.5s ease; }
+
+.footer_icon:hover {
+  opacity: 0.5; }
 
