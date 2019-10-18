@@ -1,0 +1,77 @@
+header {
+  height: 100vh; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    align-items: center; }
+    header nav .logo {
+      margin-left: 25px; }
+      header nav .logo a img {
+        width: 50%; }
+    header nav .singUp {
+      margin-right: 35px; }
+      header nav .singUp a {
+        background-color: #50b32d;
+        color: white;
+        padding: 13px 19px 14px 19px;
+        border-radius: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600; }
+  header section {
+    background-image: url(https://layouts.b3multimedia.ie/wp-content/uploads/2019/07/ls-hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    header section .presentationTexte {
+      width: 40%; }
+      header section .presentationTexte p {
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 10px;
+        color: white;
+        font-weight: 600;
+        font-size: 20px; }
+      header section .presentationTexte h1 {
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 10px;
+        color: white;
+        font-weight: 800;
+        font-size: 50px; }
+      header section .presentationTexte p {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        line-height: 16px; }
+    header section .singIn {
+      width: 40%;
+      width: 40%;
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+      height: 70%;
+      border-radius: 10px; }
+      header section .singIn h3 {
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 10px;
+        font-size: 40px;
+        font-weight: 700; }
+      header section .singIn form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        height: 90%; }
+        header section .singIn form input {
+          margin-top: 15px;
+          height: 10%; }
+        header section .singIn form .txt {
+          height: 30%; }
+
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif; }
+

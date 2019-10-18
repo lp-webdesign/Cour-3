@@ -1,0 +1,113 @@
+$color-vert: #50b32d;
+
+header{
+
+    height: 100vh;
+
+    nav{
+
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+
+        .logo{
+            margin-left: 25px;
+            a{
+                img{
+                    width: 50%;
+                }
+            }
+
+        }
+
+        .singUp{
+            margin-right: 35px;
+            a{
+                background-color: $color-vert ;
+                color: white;
+                padding: 13px 19px 14px 19px;
+                border-radius: 20px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+            }
+        
+        }
+    }
+
+    section{
+
+        background-image: url(https://layouts.b3multimedia.ie/wp-content/uploads/2019/07/ls-hero-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .presentationTexte{
+            width: 40%;
+
+            p{
+                font-family: 'Open Sans', sans-serif;
+                margin-bottom: 10px;
+                color: white;
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            h1{
+                font-family: 'Open Sans', sans-serif;
+                margin-bottom: 10px;
+                color: white;
+                font-weight: 800;
+                font-size: 50px;
+            }
+
+            p{
+                font-family: 'Open Sans', sans-serif;
+                color: white;
+                line-height: 16px;
+            }
+        }
+
+        .singIn{
+            width: 40%;
+            width: 40%;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            height: 70%;
+            border-radius: 10px;
+
+            h3{
+                font-family: 'Open Sans', sans-serif;
+                margin-bottom: 10px;
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                margin: auto;
+                height: 90%;
+
+                input{
+                    margin-top: 15px;
+                    height: 10%;
+                }
+
+                .txt{
+                    height: 30%;
+                }
+
+            }
+
+        }
+
+    }
+
+}
