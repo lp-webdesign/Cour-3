@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%; }
+
+.header {
+  background: #a4cf41 url("https://zupimages.net/up/19/42/v3uf.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: #FFFFFF; }
+  .header_subtitle {
+    background: #028202;
+    width: max-content;
+    padding: 0.2rem;
+    margin: .6rem 0; }
+  .header_title {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: .6rem 0; }
+  .header_description {
+    margin: .6rem 0; }
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0 3rem;
+  position: relative; }
+  h2:after {
+    content: url("https://zupimages.net/up/19/42/e17v.png");
+    position: absolute;
+    top: 35px;
+    left: 50vw;
+    transform: translateX(-50%); }
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0; }
+
+button {
+  color: #a4cf41;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #a4cf41;
+  padding: .5rem;
+  margin: .5rem; }
+
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  background: #FFFFFF;
+  padding: 1rem;
+  width: 100%;
+  z-index: 1;
+  color: #000000; }
+  .nav_list_items {
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    padding: 0.4rem; }
+    .nav_list_items:hover {
+      border-bottom: 2px solid #a4cf41; }
+  .nav_list_icon {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .nav_logo {
+    width: auto;
+    height: 100%; }
+
+.header_presentation {
+  width: 50vw;
+  position: relative;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%); }
+  .header_presentation_title {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2rem; }
+  .header_presentation_subtitle {
+    display: inline-block;
+    padding: 0.2rem;
+    margin: .4rem 0;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    background: #028202; }
+  .header_presentation_description {
+    color: white;
+    margin: 0.8rem 0; }
+
+.button {
+  background: #028202;
+  border-radius: 50px;
+  margin: 0.5rem 0;
+  padding: 0.4rem 1rem;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold; }
+
+.categories {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto; }
+  .categories_item {
+    margin: 1rem;
+    text-align: center; }
+  .categories_description {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0.4rem 0; }
+  .categories_product {
+    border: 1px solid #f6f6f6;
+    padding: 0 0 .5rem;
+    text-align: center;
+    margin: 0.5rem; }
+
+.rating {
+  display: inline; }
+  .rating_star {
+    display: inline; }
+    .rating_star_icon {
+      width: .8rem;
+      height: .8rem; }
+
+.product_title {
+  font-family: 'Roboto Slab', serif;
+  margin: .5rem 0; }
+
+.product_price {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  margin: .5rem 0;
+  color: #a4cf41; }
+
+.spaceAround {
+  justify-content: space-around; }
+
+.w-80 {
+  width: 60vw; }
+
+.dealsDay {
+  background-color: #f5f5f5;
+  padding: 2rem 1rem; }
+  .dealsDay_container {
+    display: flex; }
+  .dealsDay_description_container {
+    width: 50vh;
+    height: 40vh;
+    background: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    margin-left: -1rem;
+    margin-top: 50%;
+    transform: translateY(-50%); }
+  .dealsDay_description_price {
+    color: #a4cf41;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0; }
+  .dealsDay_description_text {
+    font-family: 'Arial', sans-serif;
+    line-height: 25px;
+    margin: .5rem 0; }
+  .dealsDay_slider {
+    display: flex; }
+    .dealsDay_slider_img {
+      height: auto;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+      border-radius: 5px;
+      margin: 1rem; }
+      .dealsDay_slider_img-slide {
+        width: 400px;
+        height: 400px;
+        margin-top: 50%;
+        transform: translateY(-50%); }
+      .dealsDay_slider_img:hover {
+        cursor: pointer; }
+  .dealsDay_product {
+    display: flex; }
+  .dealsDay_countdown {
+    background: #a4cf41;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 30px;
+    height: max-content;
+    z-index: 1;
+    margin-top: 50%;
+    transform: translateY(-50%); }
+    .dealsDay_countdown_item {
+      text-align: center;
+      padding: 10px 0; }
+      .dealsDay_countdown_item_hr {
+        border-top: 1px solid white;
+        color: white; }
+
+.product-media-nav {
+  width: 300px;
+  margin: auto; }
+  .product-media-nav .slick-list {
+    width: 10rem !important; }
+    .product-media-nav .slick-list .slick-track {
+      display: flex;
+      flex-direction: column;
+      width: 10rem !important; }
+      .product-media-nav .slick-list .slick-track .slick-slide {
+        width: 10rem !important; }
+        .product-media-nav .slick-list .slick-track .slick-slide:focus {
+          outline: none; }
+
+.product-image {
+  width: 45vw; }
+
+.slick-current .dealsDay_slider_img {
+  border: 1px solid #a4cf41;
+  box-shadow: 1px 1px 4px #a4cf41; }
+
