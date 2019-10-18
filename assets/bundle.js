@@ -1,9 +1,6 @@
 import "./styles/main.scss";
-import Nav from "./nav.js" ;
-import Slider from "./slider.js" ;
+import { nav } from "./nav.js" ;
+import { slider } from './slider.js';
 
-var nav = new Nav();
-nav.init();
-nav.btn();
-var slider = new Slider();
-slider.init();
+nav();
+slider();
