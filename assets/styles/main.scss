@@ -1,0 +1,129 @@
+$white : #ffffff;
+$green : #aebcab;
+$bold : 700;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.max-width{
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right {
+    text-align: right;
+    padding-right: 6%;
+}
+.left {
+    text-align: left;
+    padding-left: 6%;
+}
+
+.btn {
+    font-weight: $bold;
+    text-transform: uppercase;
+    width: 100px;
+    border: solid;
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    .head {
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+   }
+}
+
+.logo {
+    font-weight: $bold;
+    font-size: 20px;
+    letter-spacing: 15px;
+    border: solid;
+    padding: 5px;
+    text-align: center;
+
+}
+
+nav {
+    ul {
+        li {
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+    
+}
+
+.intro {
+    img {
+        width: 80%;
+        height: 50vh;
+        object-fit: cover;
+    }
+    .intro__content {
+        width: 50%;
+        position: relative;
+        left: 50%;
+        top: -270px;
+        h1 {
+            font-weight: $bold;
+            line-height: 1.2;
+            font-size: 40px;
+            margin: 5px 0;
+        }
+        h2 {
+            margin: 15px 0;
+        }
+    }
+}
+
+section {
+    margin: 50px auto;
+    text-align: center;
+    h2 {
+        color: $green;
+        font-weight: $bold;
+        font-size: 48px;
+        padding: 20px;
+    }
+}
+
+.favorite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    div {
+        width: 30%;
+        h3 {
+            font-weight: $bold;
+            text-transform: uppercase;
+        }
+        p {
+
+        }
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+        width: 13vw;
+        height: 13vw;
+        object-fit: cover;
+        padding: 20px;
+    }
+}
