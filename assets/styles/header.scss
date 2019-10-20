@@ -5,7 +5,8 @@ header{
     height: 100vh;
 
     nav{
-
+        position: fixed;
+        background-color: white;
         display: flex;
         justify-content: space-between;
         width: 100vw;
@@ -24,6 +25,7 @@ header{
 
         .singUp{
             margin-right: 35px;
+
             a{
                 background-color: $color-vert ;
                 color: white;
@@ -45,11 +47,13 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-around;
+        padding-top: 10vh;
 
         .presentationTexte{
+            opacity: 0;
             width: 40%;
 
-            p{
+            .litle__text{
                 font-family: 'Open Sans', sans-serif;
                 margin-bottom: 10px;
                 color: white;
@@ -65,14 +69,18 @@ header{
                 font-size: 50px;
             }
 
-            p{
+            .text__hero{
                 font-family: 'Open Sans', sans-serif;
                 color: white;
-                line-height: 16px;
+                line-height: 25px;
+                font-size: 20px;
+                text-shadow: 1px 1px 2px black;
             }
         }
 
         .singIn{
+
+            opacity: 0;
             width: 40%;
             width: 40%;
             text-align: center;
@@ -98,10 +106,30 @@ header{
                 input{
                     margin-top: 15px;
                     height: 10%;
+                    background-color:rgba(23,68,73,0.07);
+                    border: none;
+                    border-radius: 25px;
+                    padding-left: 30px;
+
                 }
 
                 .txt{
+                    margin-top: 15px;
+                    height: 10%;
+                    background-color:rgba(23,68,73,0.07);
+                    border: none;
+                    border-radius: 25px;
+                    padding-left: 30px;
+                    padding-top: 15px;
                     height: 30%;
+                }
+
+                .submit{
+                    background-color: $color-vert;
+                    color: white;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 600;
+                    font-size: 20px;
                 }
 
             }
@@ -111,3 +139,12 @@ header{
     }
 
 }
+
+@keyframes hidden_document_ready {
+    0% {
+        transform : scale3d(0.4, 0.4, 0.4);
+    }
+    100% {
+        transform : scale3d(1, 1, 1);
+    }
+  }

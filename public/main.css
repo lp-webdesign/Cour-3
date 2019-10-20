@@ -1,6 +1,8 @@
 header {
   height: 100vh; }
   header nav {
+    position: fixed;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -26,10 +28,12 @@ header {
     height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding-top: 10vh; }
     header section .presentationTexte {
+      opacity: 0;
       width: 40%; }
-      header section .presentationTexte p {
+      header section .presentationTexte .litle__text {
         font-family: 'Open Sans', sans-serif;
         margin-bottom: 10px;
         color: white;
@@ -41,11 +45,14 @@ header {
         color: white;
         font-weight: 800;
         font-size: 50px; }
-      header section .presentationTexte p {
+      header section .presentationTexte .text__hero {
         font-family: 'Open Sans', sans-serif;
         color: white;
-        line-height: 16px; }
+        line-height: 25px;
+        font-size: 20px;
+        text-shadow: 1px 1px 2px black; }
     header section .singIn {
+      opacity: 0;
       width: 40%;
       width: 40%;
       text-align: center;
@@ -66,12 +73,73 @@ header {
         height: 90%; }
         header section .singIn form input {
           margin-top: 15px;
-          height: 10%; }
+          height: 10%;
+          background-color: rgba(23, 68, 73, 0.07);
+          border: none;
+          border-radius: 25px;
+          padding-left: 30px; }
         header section .singIn form .txt {
+          margin-top: 15px;
+          height: 10%;
+          background-color: rgba(23, 68, 73, 0.07);
+          border: none;
+          border-radius: 25px;
+          padding-left: 30px;
+          padding-top: 15px;
           height: 30%; }
+        header section .singIn form .submit {
+          background-color: #50b32d;
+          color: white;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          font-size: 20px; }
+
+@keyframes hidden_document_ready {
+  0% {
+    transform: scale3d(0.4, 0.4, 0.4); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+.welcome {
+  text-align: center;
+  width: 100vw; }
+  .welcome h2 {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 50px; }
+    .welcome h2 span {
+      font-family: 'Open Sans', sans-serif;
+      color: #50b32d;
+      font-weight: 700;
+      font-size: 50px; }
+  .welcome div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 50px 0 50px;
+    opacity: 0; }
+    .welcome div p {
+      display: block;
+      text-align: center;
+      width: 200px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 20px; }
+      .welcome div p img {
+        margin-bottom: 10px;
+        width: 130px; }
+
+@keyframes hidden {
+  0% {
+    transform: scale3d(0.4, 0.4, 0.4); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
 
 * {
   list-style: none;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif; }
+
+html {
+  overflow-x: hidden; }
 

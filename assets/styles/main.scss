@@ -1,0 +1,51 @@
+$color-vert: #50b32d;
+
+.welcome{
+
+    text-align: center;
+    width: 100vw;
+
+    h2{
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 70px;
+        font-weight: 700;
+        font-size: 50px;
+        span{
+        font-family: 'Open Sans', sans-serif;
+        color: $color-vert;
+        font-weight: 700;
+        font-size: 50px;
+        }
+    }
+
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 50px 50px 0 50px;
+        opacity: 0;
+
+    p{
+        display: block;
+        text-align: center;
+        width: 200px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        
+
+        img{
+            margin-bottom: 10px;
+            width: 130px;
+        }
+    }
+    }
+
+    @keyframes hidden {
+        0% {
+            transform : scale3d(0.4, 0.4, 0.4);
+        }
+        100% {
+            transform : scale3d(1, 1, 1);
+        }
+      }
+}

@@ -1,7 +1,12 @@
 @import 'header.scss';
+@import 'main.scss';
 
 *{
     list-style: none;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
 }
