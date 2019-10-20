@@ -12,6 +12,7 @@ header{
         width: 100vw;
         height: 10vh;
         align-items: center;
+        z-index: 100;
 
         .logo{
             margin-left: 25px;
@@ -39,7 +40,6 @@ header{
     }
 
     section{
-
         background-image: url(https://layouts.b3multimedia.ie/wp-content/uploads/2019/07/ls-hero-image.jpg);
         background-repeat: no-repeat;
         background-size: cover;
