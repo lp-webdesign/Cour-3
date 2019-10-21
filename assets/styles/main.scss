@@ -49,3 +49,248 @@ $color-vert: #50b32d;
         }
       }
 }
+
+.landscaping{
+    opacity: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+
+    .landscaping__rigth{
+        width: 37%;
+        p{
+            font-size: 23px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+        }
+        h2{
+            margin-top: 15px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 50px;
+            span{
+                color: $color-vert;
+            }
+        }
+        .landscaping__desc{
+            margin-top: 25px;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            color: gray;
+            line-height: 20px;
+        }
+        ul{
+            margin-top: 25px;
+            margin-left: 10px;
+            li{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                font-size: 18px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                color: gray;
+                
+            }
+            svg{
+                color: $color-vert;
+                font-size: 30px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .landscaping__left{
+        width: 37%;
+        background-color: #ececec;
+        overflow: hidden;
+        border-radius: 15px;
+        position: relative;
+
+        img{
+            width: 130%;
+        }
+        h3{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            text-align: end;
+            position: absolute;
+            top: 50%;
+            right: 25px;
+            color: white;
+        }
+        p{
+            text-align: end;
+            margin-top: 20px;
+            margin-right: 30px;
+            font-size: 25px;
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(114, 114, 114);
+
+        }
+    }
+
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 70px;
+            font-weight: 700;
+            font-size: 50px;
+            span{
+            font-family: 'Open Sans', sans-serif;
+            color: $color-vert;
+            font-weight: 700;
+            font-size: 50px;
+        }
+        }
+        p{
+            width: 40%;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    .galery{
+        margin-top: 40px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+        img{
+            border-radius: 15px;
+            margin: 10px;
+            width: 31%;
+        }
+    }
+}
+
+.paralax{
+    height: 40vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    .paralax__background{
+        background-image: url('https://layouts.b3multimedia.ie/wp-content/uploads/2019/07/ls-cta-image-01.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+    }
+    .paralax__background2{
+        background-image: url('https://layouts.b3multimedia.ie/wp-content/uploads/2019/07/ls-cta-image-02.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+    }
+    h3{
+        position: absolute;
+        top: 40%;
+        width: 100vw;
+        color: white;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+    }
+    p{
+        position: absolute;
+        top: 60%;
+        width: 100vw;
+        color: white;
+        text-align: center;
+        margin-top:20px;
+        text-shadow: 1px 1px 2px black;
+    }
+}
+
+.container__slideshow{
+    width: 100vw;
+    display: flex;
+    align-items : center;
+    flex-direction: column;
+
+    h3{
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 70px;
+        font-weight: 700;
+        font-size: 50px;
+        span{
+        font-family: 'Open Sans', sans-serif;
+        color: $color-vert;
+        font-weight: 700;
+        font-size: 50px;
+        }
+    }
+
+    .slideshow {
+        width: 500px;
+        height: 35vh;
+        overflow: hidden;
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        ul{
+        width: 200%;
+        height: 35vh;
+        padding:0; margin:0;
+        list-style: none;
+
+            li{
+                float: left;
+                width: 500px;
+                display: flex;
+                align-items : center;
+                flex-direction: column;
+                img{
+                    height: 90%;
+                }
+                h4{
+                    margin-top: 5px;
+                    font-family: 'Open Sans', sans-serif;
+                    color: $color-vert;
+                    font-weight: 400;
+                    font-size: 25px;
+                }
+            }
+
+        }
+    }
+
+}
+
+footer{
+    background-color: #343352;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        margin-left: 40px;
+        color: grey;
+        font-family: 'Open Sans', sans-serif;
+    }
+    div{
+        margin-right: 40px;
+        font-size: 20px;
+        color: grey;
+        svg{
+            margin: 0 20px 0 0;
+        }
+    }
+}

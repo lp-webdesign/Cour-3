@@ -33,3 +33,11 @@ $(document).ready(function() {
     $('.hidden_document_ready').animate({'opacity':'1'},500);
     $('.hidden_document_ready').css({"animation":"hidden 2s ease"});
 });
+
+  $(function(){
+    setInterval(function(){
+       $(".slideshow ul").animate({marginLeft:-500},800,function(){
+          $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));
+       })
+    }, 3500);
+ });

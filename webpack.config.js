@@ -23,6 +23,7 @@ module.exports = {
                     }
                 }
             },
+            { test: /\.txt$/, use: 'raw-loader' },
             {
                 test: /\.s[ac]ss$/i,
                 use: [
@@ -38,4 +39,6 @@ module.exports = {
             filename: '[name].css',
         }),
     ],
+
 };
+

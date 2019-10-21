@@ -136,6 +136,202 @@ header {
   100% {
     transform: scale3d(1, 1, 1); } }
 
+.landscaping {
+  opacity: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px; }
+  .landscaping .landscaping__rigth {
+    width: 37%; }
+    .landscaping .landscaping__rigth p {
+      font-size: 23px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600; }
+    .landscaping .landscaping__rigth h2 {
+      margin-top: 15px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 50px; }
+      .landscaping .landscaping__rigth h2 span {
+        color: #50b32d; }
+    .landscaping .landscaping__rigth .landscaping__desc {
+      margin-top: 25px;
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: gray;
+      line-height: 20px; }
+    .landscaping .landscaping__rigth ul {
+      margin-top: 25px;
+      margin-left: 10px; }
+      .landscaping .landscaping__rigth ul li {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: gray; }
+      .landscaping .landscaping__rigth ul svg {
+        color: #50b32d;
+        font-size: 30px;
+        margin-right: 10px; }
+  .landscaping .landscaping__left {
+    width: 37%;
+    background-color: #ececec;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative; }
+    .landscaping .landscaping__left img {
+      width: 130%; }
+    .landscaping .landscaping__left h3 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      text-align: end;
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      color: white; }
+    .landscaping .landscaping__left p {
+      text-align: end;
+      margin-top: 20px;
+      margin-right: 30px;
+      font-size: 25px;
+      font-family: 'Open Sans', sans-serif;
+      color: #727272; }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .projects div {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .projects div h2 {
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 70px;
+      font-weight: 700;
+      font-size: 50px; }
+      .projects div h2 span {
+        font-family: 'Open Sans', sans-serif;
+        color: #50b32d;
+        font-weight: 700;
+        font-size: 50px; }
+    .projects div p {
+      width: 40%;
+      margin-top: 20px;
+      text-align: center; }
+  .projects .galery {
+    margin-top: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+    .projects .galery img {
+      border-radius: 15px;
+      margin: 10px;
+      width: 31%; }
+
+.paralax {
+  height: 40vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative; }
+  .paralax .paralax__background {
+    background-image: url("https://layouts.b3multimedia.ie/wp-content/uploads/2019/07/ls-cta-image-01.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh; }
+  .paralax .paralax__background2 {
+    background-image: url("https://layouts.b3multimedia.ie/wp-content/uploads/2019/07/ls-cta-image-02.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh; }
+  .paralax h3 {
+    position: absolute;
+    top: 40%;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px; }
+  .paralax p {
+    position: absolute;
+    top: 60%;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black; }
+
+.container__slideshow {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .container__slideshow h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 50px; }
+    .container__slideshow h3 span {
+      font-family: 'Open Sans', sans-serif;
+      color: #50b32d;
+      font-weight: 700;
+      font-size: 50px; }
+  .container__slideshow .slideshow {
+    width: 500px;
+    height: 35vh;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 50px; }
+    .container__slideshow .slideshow ul {
+      width: 200%;
+      height: 35vh;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      .container__slideshow .slideshow ul li {
+        float: left;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .container__slideshow .slideshow ul li img {
+          height: 90%; }
+        .container__slideshow .slideshow ul li h4 {
+          margin-top: 5px;
+          font-family: 'Open Sans', sans-serif;
+          color: #50b32d;
+          font-weight: 400;
+          font-size: 25px; }
+
+footer {
+  background-color: #343352;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  footer p {
+    margin-left: 40px;
+    color: grey;
+    font-family: 'Open Sans', sans-serif; }
+  footer div {
+    margin-right: 40px;
+    font-size: 20px;
+    color: grey; }
+    footer div svg {
+      margin: 0 20px 0 0; }
+
 * {
   list-style: none;
   text-decoration: none;
