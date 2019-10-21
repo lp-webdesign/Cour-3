@@ -74,11 +74,11 @@ h2 {
 
 .projects {
   height: 100vh;
-  padding: 11.25rem 11.25rem;
+  padding: 0 11.25rem 0 11.25rem;
   background-color: #f1f1f1;
   position: relative; }
   .projects__title {
-    margin-bottom: 1.8rem; }
+    padding: 11.25rem 0 1.8rem 0; }
   .projects__list {
     margin-bottom: 4rem; }
     .projects__list li {
@@ -87,11 +87,14 @@ h2 {
       font-weight: 700;
       color: #cacaca;
       padding-right: 3rem; }
-    .projects__list .active {
+    .projects__list .projects__list--active {
       color: #ff1b72; }
   .projects__images {
     display: flex;
-    align-items: center; }
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute; }
     .projects__images--container {
       position: relative;
       display: inline-block; }
@@ -106,21 +109,20 @@ h2 {
         left: 0;
         opacity: 0;
         transition: 0.7s; }
-    .projects__images--active {
-      height: 2520px;
+    .projects__images--active-img {
       transition: 0.7s; }
-      .projects__images--active:hover {
+      .projects__images--active-img:hover {
         transform: scale(1.1);
         border-bottom: 0.5rem solid #ff1b72;
         border-radius: 2px;
         transition: 0.7s; }
     .projects__images img {
-      height: 290px;
+      height: 250px;
+      width: 250px;
       margin-right: 15px;
       box-shadow: 2px 2px 10px #4b4b4b;
       border-radius: 2px; }
-  .projects__images--tourism {
+  .projects__images--no-active {
     position: absolute;
-    top: 330px;
     display: none; }
 
