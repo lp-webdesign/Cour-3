@@ -69,18 +69,67 @@
     <section id="products">
       <h2>Products</h2>
 
-      <div class="product">
-        <img src="" alt="">
-        <h3></h3>
-        <span></span>
-        <button></button>
-      </div>
+      <div class="products_container grid">
+        <div class="button-group sort-by-button-group">
+          <button class="button is-checked" data-sort-value="original-order">Original order</button>
+          <button class="button" data-sort-value="category">Category</button>
+        </div>
 
-      <div class="product">
-        <img src="" alt="">
-        <h3></h3>
-        <span></span>
-        <button></button>
+        <div class="product grid-item" data-category="sushi">
+          <img src="https://static.cuisineaz.com/610x610/i8968-sushi-au-saumon.jpg" alt="salmon sushi">
+          <h3>1.25$</h3>
+          <span>Pair of salmon sushi</span>
+          <button>Add to cart</button>
+        </div>
+  
+        <div class="product grid-item" data-category="yakitori">
+          <img src="https://d3rrv21q7fx9b0.cloudfront.net/m/173f473025e9d139/TH04_470x470-TH04_yakitori-boeuf-cheddar.jpg" alt="beef cheese">
+          <h3>3.5$</h3>
+          <span>Pair of beef & cheese yakitori</span>
+          <button>Add to cart</button>
+        </div>
+
+        <div class="product grid-item" data-category="sashimi">
+          <img src="https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F80926432-e584-4203-b0cb-44fe25a18997.2Ejpeg/748x372/quality/90/crop-from/center/sashimi-de-saumon.jpeg" alt="salmon sashimi">
+          <h3>3$</h3>
+          <span>Four salmon sashimi</span>
+          <button>Add to cart</button>
+        </div>
+
+        <div class="product grid-item" data-category="maki">
+          <img src="http://cuisinemoiunmouton.com/wp-content/uploads/2014/11/maki-mangue-foie-gras-sesame-11-sur-4.jpg" alt="california rolls">
+          <h3>2.5$</h3>
+          <span>Four california rolls</span>
+          <button>Add to cart</button>
+        </div>
+
+        <div class="product grid-item" data-category="yakitori">
+          <img src="https://www.thespruceeats.com/thmb/ernn8U6Hp6ikT5ZwIjU9qFUQQ4c=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/chickenyakitori-589ddda65f9b58819c878628.jpeg" alt="chicken yakitori">
+          <h3>3.5$</h3>
+          <span>Pair of chicken yakitori</span>
+          <button>Add to cart</button>
+        </div>
+
+        <div class="product grid-item" data-category="sashimi">
+          <img src="https://recettestahitiennes.com/images/com_yoorecipe/833/20190702180844-sashimi.de.thon.rouge.jpg" alt="tuna sashimi">
+          <h3>3$</h3>
+          <span>Four tuna sashimi</span>
+          <button>Add to cart</button>
+        </div>
+
+        <div class="product grid-item" data-category="maki">
+          <img src="https://www.ilovesushi.hu/images/sushi/197.jpg" alt="avocado salmon maki">
+          <h3>2.5$</h3>
+          <span>Four avocado & salmon maki</span>
+          <button>Add to cart</button>
+        </div>
+  
+        <div class="product grid-item" data-category="sushi">
+          <img src="http://sushibar-kh.com/wp-content/uploads/2016/01/Maguro.jpg" alt="Maguro sushi">
+          <h3>1.25$</h3>
+          <span>Pair of maguro sushi</span>
+          <button>Add to cart</button>
+        </div>
       </div>
     </section>
   </main>
@@ -109,7 +158,8 @@
       </li>
     </ul>
   </footer>
-
+  
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="public/bundle.js"></script>
 </body>
 </html>

@@ -20,6 +20,13 @@ a {
     text-decoration: none;
     color: $white;
 }
+h2 {
+    text-align: center;
+    padding-top: 6rem;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
 /*Header-------------------------------------------------------------------*/
 header {
     width: 100%;
@@ -109,18 +116,13 @@ h1 {
         opacity: 1;
     }
 }
+
 /*Blog-------------------------------------------------------------------*/
 #articles {
-    h2 {
-        text-align: center;
-        padding-top: 6rem;
-        font-weight: bolder;
-        font-size: 30px;
-    }
     div {
         position: relative;
         left: 50%;
-        transform: translate(-50%, 20%);
+        transform: translate(-50%, 40%);
         width: 1000px;
         height: 600px;
         display: flex;
@@ -137,7 +139,37 @@ article {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+
+    h3 {
+        transition: $transition;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        color: $white;
+        background-color: $red;
+        width: 30%;
+        transform: translateX(-100%);
+    }
+    p {
+        position: relative;
+        bottom: -36%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1rem;
+        font-size: 14px;
+        line-height: 20px;
+        transform: translateY(100%);
+        transition: $transition;
+    }
 }
+article:hover p {
+    transform: translateY(0);
+}
+article:hover h3 {
+    transform: translateX(0);
+}
+
 .maki {
     background-image: url("https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
@@ -150,6 +182,47 @@ article {
 .yakitoris {
     background-image: url("https://static.750g.com/images/1200-630/f2fb706bee4aaa490a474e48288379a6/brochettes-yakitori.jpeg");
 }
+
+/*Products-------------------------------------------------------------------*/
+.products_container {
+    margin: 0 auto;
+    width: 60%;
+    .product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 3rem;
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+        h3 {
+            font-weight: bolder;
+            margin-top: 0.5rem;
+        }
+        span {
+            display: block;
+            margin-top: 0.5rem;
+        }
+        button {
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            color: $red;
+            background-color: $white;
+            font-weight: normal;
+            border: 0.5px solid $red;
+            transition: $transition;
+        }
+        button:hover {
+            color: $white;
+            background-color: $red;
+        }
+    }
+}
+
+
+
 /*Footer-------------------------------------------------------------------*/
 footer {
     background-color: $red;
