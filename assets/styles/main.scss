@@ -1,0 +1,483 @@
+// COLORS
+$black: #000000;
+$white:  #ffffff;
+$yellow:#fef100;
+$yellow2:#fef100e8;
+$grey: grey;
+$grey2: #252525b7;
+
+// GENERAL
+body{
+    background-color: $white;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.homepage, .actions, .actus, .sm{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+
+// SECTION: NAV/HEADER
+.social{
+    width: 40%;
+    background-color: $black;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: solid 1px $grey2;
+        text-decoration: none;
+    }
+
+    a:nth-last-child(-n + 1){
+        border: 0; 
+    }
+
+    a:hover{
+        img{
+            opacity: 1;
+        }
+    }
+
+    img{
+        margin: 20px;
+        width: 13px;
+        opacity: 0.6;
+    }
+
+    span{
+        font-weight: 700;
+        margin: 18px;
+        font-size: 13px;
+        text-decoration: none;
+        color: $white;
+    }
+
+
+
+}
+
+.nav{
+    width: 80%;
+    height: 80px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    li{
+        margin: 0 0 0 50px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $black;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    a:hover, a:focus{
+        color: $yellow;
+    }
+
+}
+
+
+
+// SECTION: HOMEPAGE
+.homepage__title{
+    width: 40%;
+    background-color: $yellow2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+
+    h1,a{
+        width: 300px;
+        text-align: left;
+    }
+
+    h1{
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 42px;
+    }
+
+    span{
+        font-weight: 600;
+    }
+
+    a{  
+        margin-top: 50px;
+        text-decoration: none;
+        color: $black;
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+    a:after{
+        margin-left: 15px;
+        content: "—————";
+        color: $black;
+    }
+}
+
+.homepage__img{
+    width: 80%;
+    background-color: $black;
+
+    img{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+// SECTION: ACTIONS
+.actions__secteur{
+    width: 60%;
+    background-color: $white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+
+    h2, p, a{
+        width: 500px;
+        text-align: left;
+        margin-right: 60px;
+    }
+
+    h2{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 32px;
+        margin-bottom: 50px;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 16px;
+        color: $grey;
+    }
+
+    p:before{
+        content:"";
+        position: absolute;
+        background-color: $black;
+        width: 1.5px;
+        height: 218px;
+        margin-right: 50px;
+    }
+
+    a{  
+        margin-top: 50px;
+        text-decoration: none;
+        color: $black;
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+    a:after{
+        font-family: none;
+        margin-left: 15px;
+        content: "—————";
+        color: $black;
+    }
+}
+
+.actions__engine{
+    width: 40%;
+    height: 110%;
+    background-color: $yellow;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 100px;
+    flex-direction: column;
+    
+
+    div, img, h2, p, a{
+        width: 500px;
+        text-align: left;
+        margin-left: 60px;
+    }
+
+    div{
+        background-color: $black;
+        height: 70px;
+        width: 55px;
+        margin-bottom: 25px;
+    }
+
+    h2{
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 22px;
+        margin-bottom: 25px;
+        width: 200px;
+    }
+
+    p{
+        font-size: 12px;
+        line-height: 14px;
+        width: 250px;
+        color: $grey;
+    }
+
+    a{  
+        margin-top: 50px;
+        text-decoration: none;
+        color: $black;
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+    a:after{
+        font-family: none;
+        margin-left: 15px;
+        content: "—————";
+        color: $black;
+    }
+}
+
+
+
+// SECTION: ACTUS
+.actus__new{
+    width: 60%;
+    background-color: $yellow;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    div{
+        width: 40%;
+        height: 70%;
+        background-color: $white;
+        justify-content: center;
+        position: relative;
+
+        img{
+            width: 100%;
+            height: 50%;
+            position: relative;
+        }
+
+        div{
+            width: 100%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            top: 190px;
+            background-color: transparent;
+
+            .category{
+                display: flex;
+                width: 100px;
+                background-color: skyblue;
+                opacity: 0.91;
+                height: 20px;
+                font-size: 12px;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                font-weight: 500;
+                padding: 5px;
+
+            }
+            hr{
+                height: 18px;
+                width: auto;
+                background-color: $black;
+                border: solid 0.5px $black;
+                margin: 16px 0;
+            }
+
+            h4{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;
+                width: 220px;
+                margin-bottom: 50px;
+            }
+
+            .date{
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                margin-bottom: 50px;
+                color: $grey;
+            }
+        }
+    }
+}
+
+.actus__cta{
+    width: 20%;
+    height: 70%;
+    background-color: $black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    h2, p, a{
+        width: 500px;
+        text-align: left;
+        margin-left: 30px;
+        color: $white;
+        width: 200px;
+    }
+
+    h2{
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 26px;
+        margin-bottom: 50px;
+    }
+
+    p{
+        font-size: 12px;
+        color: $grey;
+    }
+
+    a{  
+        margin-top: 50px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+    a:after{
+        font-family: none;
+        margin-left: 15px;
+        content: "—————";
+    }
+}
+
+
+
+// SECTION: SOCIAL
+
+.sm{
+    background-color: $white;
+} 
+
+
+
+// SECTION: FOOTER
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: $white;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+
+    .fakelogo{
+        width: 160px;
+        height: 50px;
+        background-color: $black; 
+        margin: 0 30px;
+    }
+}
+
+.footer__newsletter{
+    flex-direction: column;
+    margin: 0 50px;
+
+    h3{
+        color: $grey;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 35px;
+    }
+
+    div{
+        border-bottom: solid 1.5px $black;
+        padding: 5px;
+    }
+
+    .email{
+        border: none;
+        color: $grey;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        width: 200px;
+        padding-right: 0;
+    }
+
+    .email,:focus, .submit:focus{
+        outline: none;
+    }
+
+    .submit{
+        border: none;
+        background: none;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        padding-right: 0;
+
+    }
+
+    .submit:hover, .submit:focus{
+        color: $yellow;
+
+    }
+
+}
+
+.footer__social{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+
+    h3{
+        color: $grey;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 35px;
+    }
+
+    div{
+        flex-direction: row
+    }
+
+    img{
+        width: 14px;
+        margin-right: 40px;
+    }
+}
+
+.mention{
+    display: flex;
+    width: 80%;
+    background-color: $black;
+    height: 40px;
+}

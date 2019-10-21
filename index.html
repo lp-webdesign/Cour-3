@@ -6,8 +6,120 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="public/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <header>
+        <div class="social">
+            <a href=""><img src="assets/img/facebook.svg" alt=""></a>
+            <a href=""><img src="assets/img/twitter.svg" alt=""></a>
+            <a href=""><img src="assets/img/vimeo.svg" alt=""></a>
+            <a href=""><img src="assets/img/linkedin.svg" alt=""></a>
+            <a href=""><span>FR</span></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#homepage">INFOS</a></li>
+                <li><a href="#actions">ACTIONS</a></li>
+                <li><a href="#actus">ACTUS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="homepage" id="homepage">
+            <div class="homepage__title">
+                <h1>Bientôt la prochaine édition de <span>Nest'up</span></h1>
+                <a href="">DETAILS DE L'ACTION</a> <!--avec un :after pour le trait-->
+            </div>
+            
+            <div class="homepage__img">
+                <img src="assets/img/cover.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="actions" id="actions">
+        <div class="actions__secteur">
+            <h2>Nous organisons de nombreuses actions touchant des secteurs trés variés</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque, nisl eget convallis volutpat, magna diam placerat augue, at varius neque sapien egestas felis. Aenean fringilla pulvinar magna a dignissim. Suspendisse rhoncus ornare mattis. Aliquam a egestas quam, nec placerat justo. Integer bibendum quam sed quam interdum, sit amet scelerisque elit tincidunt. Sed justo ligula, sagittis ac vulputate ut, condimentum eu nibh. Aliquam lorem ex, tempus at elit vitae, cursus faucibus lacus. Cras vitae malesuada quam. Curabitur felis lectus, fringilla scelerisque consequat non, hendrerit sed elit. Pellentesque vitae metus tempus, fermentum ipsum at, finibus nunc.</p>
+            <a href="">TOUTES NOS ACTIONS</a> <!--avec un :after pour le trait-->
+        </div>
+
+        <div class="actions__engine">
+                <!-- <img src="" alt="logo-engine"> -->
+                <div></div>
+                <h2>Engine est une initiative de Creative Wallonia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque, nisl eget convallis volutpat, magna diam placerat augue, at varius neque sapien egestas felis. Aenean fringilla pulvinar magna a dignissim. Suspendisse rhoncus ornare mattis. Aliquam a egestas quam, nec placerat justo. Integer bibendum quam sed quam interdum, sit amet scelerisque elit tincidunt.</p>
+                <a href="">PLUS D'INFOS</a> <!--avec un :after pour le trait-->
+            </div>
+
+    </section>
+
+
+
+    <section class="actus" id="actus">
+        <!-- DIV AVEC LES 2 DERNIERES ACTUS. A GENERER EN JQUERY. -->
+        <div class="actus__new">
+                <div>
+                    <img src="assets/img/cover.jpg" alt="">
+                    <div>
+                            <span class="category">EVENEMENT</span>
+                            <hr>
+                            <h4>La semaine de la créativité à travers toute le territoire de la  Wallonie</h4>
+                            <span class="date">10.05.1999</span> 
+                    </div>
+                </div>
+        </div>
+
+        <div class="actus__cta">
+                <h2>Passionné par le sujet de la créativité ?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque, nisl eget convallis volutpat, magna diam placerat augue, at varius neque sapien egestas felis.</p>
+                <a href="">TOUTES NOS ACTUS</a> <!--avec un :after pour le trait-->
+        </div>
+
+    </section>
+
+
+
+    <section class="sm" id="contact">
+
+    </section>
+
+
+
+    <footer>
+        <!-- <img src="" alt="">
+        <img src="" alt=""> -->
+        <div class="fakelogo"></div>
+        <div class="fakelogo"></div>
+
+        <div class="footer__newsletter">
+            <h3>Restez connectés</h3>
+            <div>
+                <input type="email" name="Email" placeholder="Email" class="email">
+                <input type="submit" value="OK" class="submit">
+            </div>
+        </div>
+
+        <div class="footer__social">
+            <h3>Suivez-nous</h3>
+            <div>
+                <a href=""><img src="assets/img/twitter.svg" alt=""></a>
+                <a href=""><img src="assets/img/facebook.svg" alt=""></a>
+                <a href=""><img src="assets/img/linkedin.svg" alt=""></a>
+                <a href=""><img src="assets/img/vimeo.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mention">
+
+    </div>
+
+    <script src="public/bundle.js"></script>
 </body>
 </html>
