@@ -8,7 +8,7 @@ module.exports = {
         ],
     },
     output: {
-        path: path.resolve(__dirname, 'assets/styles/'),
+        path: path.resolve(__dirname, ' assets/styles/'),
         filename: 'bundle.js',
     },
     module: {

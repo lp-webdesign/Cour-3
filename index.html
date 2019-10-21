@@ -4,7 +4,8 @@
 <head>
     <title>Triplestate</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=
+    1.0">
 
     <meta name="description" content="">
 
@@ -13,7 +14,13 @@
 
     <link rel="stylesheet" href="node_modules/jquery/dist/jquery.min.js">
     <link rel="stylesheet" href="node_modules/jquery/dist/jquery.js">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/magnific/index.js"></script>
+
+
+
 </head>
 
 <body>
@@ -22,11 +29,17 @@
         <nav>
             <h1 id="logo">Tripestate</h1>
 
+            <div id="hamburger">
+                <div class="trait"></div>
+                <div class="trait"></div>
+                <div class="trait"></div>
+            </div>
+
             <ul>
-                <li>Menu 1</li>
-                <li>Menu 2</li>
-                <li>Menu 3</li>
-                <li>Menu 4</li>
+                <li class="presentation"><a>Presentation</a></li>
+                <li class="rentals"><a href="#rentals">Rentals</a></li>
+                <li class="sales"><a href="#sales">Sales</a></li>
+                <li class="team"><a href="#team">Team</a></li>
             </ul>
 
 
@@ -44,68 +57,72 @@
             <h2>Modern apartement in a new residential complex</h2>
 
             <form id="search">
-                <input type="text" placeholder="Lorem Ipsum">
-                <button type="submit">Search</button>
+                <input type="text" placeholder="Search your location">
+                <button type="submit">Enter</button>
             </form>
         </div>
 
         <img src="assets/img/hero.jpeg" alt="Image trop stylé d'une maison">
 
-        <p> &lsaquo;- Scroll Down</p>
+        <p><a href="#presentation"> &lsaquo;- Scroll Down</a></p>
     </section>
     <section id="presentation">
-        <h3>Specialized in housing and offices, the group has many tardes in the real estate</h3>.
-        <img src="" alt="salon">
-        <img src="" alt="chambre">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est nibh, faucibus finibus augue sed, sollicitudin porta arcu. Nulla nec consectetur lectus. In nisl tortor, ultricies eleifend nunc at, consectetur finibus lorem. Maecenas quis massa at erat mattis feugiat. Sed varius fringilla mauris in semper. Nam convallis sapien sed est aliquam pharetra. Sed quis lorem eget velit porta maximus ut sit amet ex.
-        </p>
-        <p>
-            Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sit amet enim pretium, luctus urna quis, dignissim est. Donec eget ante sit amet lectus lobortis sollicitudin. Aliquam bibendum metus ut felis pretium, eu vestibulum ante porttitor. Vestibulum ut pharetra eros. Morbi eu pulvinar sapien. Curabitur aliquam nisi ut massa finibus, eget convallis augue gravida. Vestibulum consequat nunc sit amet suscipit blandit. Donec a elementum dolor. Maecenas sed turpis leo. Mauris porttitor vulputate lectus.</p>
+        <div id="col-1">
+            <h3>Specialized in housing and offices, the group has many tardes in the real estate</h3>.
+            <img src="assets/img/apartment-books-chair-2079249.jpg" alt="salon">
+        </div>
+        <div id="col-2">
+            <img src="assets/img/chairs-furniture-home-2098913.jpg" alt="cuisine">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est nibh, faucibus finibus augue sed, sollicitudin porta arcu. Nulla nec consectetur lectus. In nisl tortor, ultricies eleifend nunc at, consectetur finibus lorem.
+            </p>
+            <p>
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sit amet enim pretium, luctus urna quis, dignissim est. Donec eget ante sit amet lectus lobortis sollicitudin.</p>
 
-        <a href="#">View More</a>
+            <p><a href="#" id="view_more_pres">View More</a></p>
+        </div>
     </section>
 
-    <section class="products">
-        <h4><strong>2000+</strong>Apartements for rent</h4>
+    <section class="products" id="rentals">
+        <div class="header">
+            <h4><strong>2000+</strong>Apartements for rent</h4>
 
-        <a href="#">View More</a>
-
-        <article>
-            <img src="" alt="maison_1">
+            <a href="#">View More</a>
+        </div>
+        <article id="maison1">
+            <img src="assets/img/maison.png" alt="maison_1">
             <h1>Maison 1</h1>
             <div class="star">
-                <!-- Ici on met les star-->
+                ⭐️⭐️⭐️⭐️⭐️
             </div>
-
             <div class="data">
-                <p class="view">10</p>
-                <p class="like">10</p>
+                <p class="view">0</p>
+                <p class="like">0</p>
             </div>
         </article>
 
-        <article>
-            <img src="" alt="maison_1">
+        <article id="maison2">
+            <img src="assets/img/maison2.png" alt="maison_1">
             <h1>Maison 1</h1>
             <div class="star">
-                <!-- Ici on met les star-->
+                ⭐️⭐️⭐️⭐️⭐️
             </div>
 
             <div class="data">
-                <p class="view">10</p>
-                <p class="like">10</p>
+                <p class="view">0</p>
+                <p class="like">0</p>
             </div>
         </article>
 
-        <article>
-            <img src="" alt="maison_1">
+        <article id="maison3">
+            <img src="assets/img/maison3.png" alt="maison_1">
             <h1>Maison 1</h1>
             <div class="star">
-                <!-- Ici on met les star-->
+                ⭐️⭐️⭐️⭐️⭐️
             </div>
 
             <div class="data">
-                <p class="view">10</p>
-                <p class="like">10</p>
+                <p class="view">0</p>
+                <p class="like">0</p>
             </div>
         </article>
 
@@ -113,75 +130,102 @@
     </section>
 
 
-    <section class="products">
-        <h4><strong>2000+</strong>Apartements for Sell</h4>
+    <section class="products" id="sales">
+        <div class="header">
+            <h4><strong>2000+</strong> Apartements for Sell</h4>
 
-        <a href="#">View More</a>
-
-        <article>
-            <img src="" alt="maison_1">
+            <a href="#">View More</a>
+        </div>
+        <article id="maison4">
+            <img src="assets/img/maison4.png" alt="maison_1">
             <h1>Maison 1</h1>
             <div class="star">
-                <!-- Ici on met les star-->
+                ⭐️⭐️⭐️⭐️⭐️
             </div>
 
             <div class="data">
-                <p class="view">10</p>
-                <p class="like">10</p>
+                <p class="view">0</p>
+                <p class="like">0</p>
             </div>
         </article>
 
-        <article>
-            <img src="" alt="maison_1">
+        <article id="maison5">
+            <img src="assets/img/maison5.png" alt="maison_1">
             <h1>Maison 1</h1>
             <div class="star">
-                <!-- Ici on met les star-->
+                ⭐️⭐️⭐️⭐️⭐️
             </div>
 
             <div class="data">
-                <p class="view">10</p>
-                <p class="like">10</p>
+                <p class="view">0</p>
+                <p class="like">0</p>
             </div>
         </article>
 
-        <article>
-            <img src="" alt="maison_1">
+        <article id="maison6">
+            <img src="assets/img/maison6.png" alt="maison_1">
             <h1>Maison 1</h1>
             <div class="star">
-                <!-- Ici on met les star-->
+                ⭐️⭐️⭐️⭐️⭐️
             </div>
 
             <div class="data">
-                <p class="view">10</p>
-                <p class="like">10</p>
+                <p class="view">0</p>
+                <p class="like">0</p>
             </div>
         </article>
     </section>
 
 
     <section id="team">
-        <h4>Meet our incredible <strong>Agents</strong></h4>
-        <a href="#">View More</a>
-
+        <div class="header">
+            <h4>Meet our incredible <strong>Agents</strong></h4>
+            <a href="#">View More</a>
+        </div>
         <article>
-            <img src="" alt="membre_1">
+            <img src="assets/img/perso1.png" alt="membre_1">
             <h1>John Doe</h1>
             <p class="fonction">CEO</p>
 
             <div class="social">
-                <a href="#"><img src="" alt="logo fb"></a>
-                <a href="#"><img src="" alt="logo twitter"></a>
-                <a href="#"><img src="" alt="logo instagram"></a>
-                <a href="#"><img src="" alt="logo linkedin"></a>
+                <a href="#"><img src="assets/img/004-facebook.png" alt="logo fb"></a>
+                <a href="#"><img src="assets/img/003-twitter.png" alt="logo twitter"></a>
+                <a href="#"><img src="assets/img/002-instagram.png" alt="logo instagram"></a>
+                <a href="#"><img src="assets/img/001-linkedin.png" alt="logo linkedin"></a>
+            </div>
+        </article>
+
+        <article>
+            <img src="assets/img/perso2.png" alt="membre_1">
+            <h1>Tony Stark</h1>
+            <p class="fonction">Designer</p>
+
+            <div class="social">
+                <a href="#"><img src="assets/img/004-facebook.png" alt="logo fb"></a>
+                <a href="#"><img src="assets/img/003-twitter.png" alt="logo twitter"></a>
+                <a href="#"><img src="assets/img/002-instagram.png" alt="logo instagram"></a>
+                <a href="#"><img src="assets/img/001-linkedin.png" alt="logo linkedin"></a>
+            </div>
+        </article>
+
+        <article>
+            <img src="assets/img/perso3.png" alt="membre_1">
+            <h1>Jane Doe</h1>
+            <p class="fonction">Commercial</p>
+
+            <div class="social">
+                <a href="#"><img src="assets/img/004-facebook.png" alt="logo fb"></a>
+                <a href="#"><img src="assets/img/003-twitter.png" alt="logo twitter"></a>
+                <a href="#"><img src="assets/img/002-instagram.png" alt="logo instagram"></a>
+                <a href="#"><img src="assets/img/001-linkedin.png" alt="logo linkedin"></a>
             </div>
         </article>
     </section>
 
     <footer>
 
-        <p>Developped by Guigui Corp</p>
+        <p>Design by <a href="https://dribbble.com/uiuxalam">Shah Alam</a> | Developped by <a href="http://guillaume.studio">Guillaume Marcel</a></p>
 
     </footer>
 </body>
-
-</html>
+<script src="assets/js/script.js"></script></html>
