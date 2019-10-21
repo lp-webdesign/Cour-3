@@ -2,19 +2,66 @@
 $black: #333333;
 $white: #F6F6F6;
 $grey: #FAFBFF;
+@function size($multiplicator,
+$nbColumn) {
+    $ratio: (1*100)/$nbColumn;
+    $result: ($multiplicator*$ratio)*1%;
+    @return $result;
+}
+
 body {
     background-color: $white;
 }
 
+h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 12px;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: $black;
+}
+
+p {
+    color: #4f4f4f;
+    font-size: 12px;
+    line-height: normal;
+    font-family: 'PT Serif', serif;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    &:visited {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
 header {
     height: 100vh;
-    // background: url('../../public/images/architectural.jpg');
+    background: url('../images/architectural.jpg');
+    background-position: bottom;
+    background-size: cover;
     .navbar {
         position: absolute;
-        width: 100%;
+        width: size(3, 5);
+        left: size(1, 5);
+        display: flex;
+        flex-direction: row;
+        margin: 20px 20px 20px 20px;
         h1 {
             display: inline-block;
-            margin: 20px 20px 20px 20px;
+            width: size(1, 4);
             font-family: 'Montserrat', sans-serif;
             text-transform: capitalize;
             text-transform: uppercase;
@@ -23,7 +70,8 @@ header {
             color: $black;
         }
         nav {
-            display: inline-block;
+            width: size(3, 4);
+            text-align: right;
             ul {
                 padding: 0;
                 li {
@@ -31,7 +79,6 @@ header {
                     display: inline-block;
                     margin: 0 20px 0 20px;
                     a {
-                        text-decoration: none;
                         font-family: 'Montserrat', sans-serif;
                         text-transform: capitalize;
                         font-size: 12px;
@@ -49,50 +96,156 @@ header {
             }
         }
     }
-    img {
-        position: absolute;
-        top: 0;
-        height: 100vh;
-        width: 100%;
-        z-index: -1;
+    .hero {
+        height: 100%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $black;
+        h2 {
+            font-size: 30px;
+        }
+        a {
+            font-size: 10px;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &:visited {
+                color: $black;
+                text-decoration: none;
+            }
+            &:hover {
+                color: #4f4f4f;
+                text-decoration: none;
+            }
+            .fa-play {
+                width: 25px;
+                height: 25px;
+                margin: 0 10px;
+            }
+        }
     }
 }
 
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.who {
+    width: size(3, 5);
+    margin-left: auto;
+    margin-right: auto;
     color: $black;
-    h3 {
-        font-size: 10px;
-        font-family: 'PT Serif', serif;
-        margin-bottom: 10px;
+    position: relative;
+    &__information {
+        width: size(5, 12);
+        margin: 100px 0;
+        h2 {
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 15%;
+                position: absolute;
+                bottom: -10px;
+                background-color: $black;
+            }
+        }
+        p {
+            margin: 25px 0 30px 0;
+        }
+        a {
+            padding: 12px 30px;
+            margin: 10px 0 10px 0;
+            border-radius: 40px;
+            text-transform: uppercase;
+            font-size: 12px;
+            border: solid 2px #333333;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
     }
+    &__img1 {
+        width: size(4, 12);
+        position: absolute;
+        top: 0;
+        left: size(6, 12);
+    }
+    &__img2 {
+        width: size(4, 12);
+        position: absolute;
+        top: size(6, 12);
+        left: size(8, 12);
+    }
+}
+
+.services {
+    background-color: #efefef;
+    padding: 100px 0;
+    color: $black;
+    .container {
+        margin: 0 auto 0 auto;
+        width: size(3, 5);
+        h2,
+        h3 {
+            text-align: center;
+        }
+        h2 {
+            position: relative;
+            width: 100%;
+            &::after {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 5%;
+                position: absolute;
+                left: 45%;
+                bottom: -10px;
+                background-color: $black;
+            }
+        }
+        .row {
+            width: 100%;
+            margin: 30px 0;
+            &__col {
+                width: size(4, 12)-5%;
+                display: inline-block;
+                margin: 0 10px;
+                position: relative;
+                svg {
+                    position: absolute;
+                    width: size(3, 12);
+                    height: 20%;
+                }
+                h4,
+                p {
+                    margin: 0 0 10px size(3, 12);
+                }
+                p {
+                    color: #4f4f4f;
+                }
+            }
+        }
+    }
+}
+
+.works {
+    width: size(3, 5);
+    margin: 100px auto;
+    color: $black;
     h2 {
-        font-size: 20px;
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 10px;
-    }
-    a {
-        font-size: 10px;
-        font-family: 'Montserrat', sans-serif;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        &:visited {
-            color: $black;
-            text-decoration: none;
-        }
-        &:hover {
-            color: #4f4f4f;
-            text-decoration: none;
-        }
-        .fa-play {
-            width: 25px;
-            height: 25px;
-            margin: 0 10px;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 5%;
+            position: absolute;
+            bottom: -10px;
+            background-color: #333333;
         }
     }
 }
