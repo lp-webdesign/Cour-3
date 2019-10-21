@@ -196,4 +196,152 @@ header {
       position: absolute;
       bottom: -10px;
       background-color: #333333; }
+  .works .carousel {
+    height: 250px;
+    position: relative; }
+    .works .carousel .carousel-cell {
+      width: 100%; }
+      .works .carousel .carousel-cell .work {
+        width: 30.33333%;
+        background-color: #efefef;
+        margin: 0 5px;
+        display: inline-block; }
+      .works .carousel .carousel-cell h3 {
+        margin-left: 10px;
+        margin-top: 10px; }
+      .works .carousel .carousel-cell h4 {
+        margin-left: 10px;
+        padding-bottom: 10px; }
+      .works .carousel .carousel-cell img {
+        width: 100%; }
+
+.flickity-enabled {
+  position: relative; }
+
+.flickity-enabled:focus {
+  outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.flickity-page-dots {
+  width: 60%;
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1; }
+  .flickity-page-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: rgba(79, 79, 79, 0.25);
+    border-radius: 50%;
+    opacity: 0.25;
+    cursor: pointer; }
+  .flickity-page-dots .is-selected {
+    background: #333333; }
+
+.flickity-button {
+  display: none; }
+
+.contact {
+  text-align: center;
+  background-image: url(images/mountains.jpg);
+  background-position: top;
+  background-size: cover;
+  padding: 100px 0;
+  color: #333333; }
+  .contact h2 {
+    font-size: 25px;
+    margin-bottom: 55px; }
+  .contact a {
+    padding: 12px 30px;
+    margin: 10px 0 10px 0;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: solid 2px #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #F6F6F6; }
+
+.clients {
+  width: 60%;
+  margin: 100px auto;
+  color: #333333;
+  position: relative; }
+  .clients h2 {
+    position: relative; }
+    .clients h2::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 5%;
+      position: absolute;
+      bottom: -10px;
+      background-color: #333333; }
+  .clients .infos {
+    width: 50%; }
+    .clients .infos svg {
+      position: absolute;
+      width: 2%;
+      opacity: 0.2; }
+    .clients .infos h3,
+    .clients .infos h4,
+    .clients .infos p {
+      margin: 0 0 10px 8.33333%; }
+  .clients .grid {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .clients .grid .border-b {
+      border-bottom: 1px solid rgba(207, 207, 207, 0.5); }
+    .clients .grid .row {
+      width: 100%; }
+      .clients .grid .row .border-l-r {
+        border-left: 1px solid rgba(207, 207, 207, 0.5);
+        border-right: 1px solid rgba(207, 207, 207, 0.5); }
+      .clients .grid .row .col {
+        width: 31.33333%;
+        display: inline-block; }
+        .clients .grid .row .col img {
+          width: 100%; }
+
+.theme {
+  text-align: center;
+  background: linear-gradient(rgba(253, 253, 253, 0.75), rgba(253, 253, 253, 0.75)), url(images/modern-house.jpg);
+  background-position: bottom;
+  background-size: cover;
+  padding: 100px 0;
+  color: #333333; }
+  .theme h2 {
+    font-size: 25px;
+    margin-bottom: 55px; }
+  .theme a {
+    padding: 12px 30px;
+    margin: 10px 0 10px 0;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: solid 2px #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #F6F6F6; }
 

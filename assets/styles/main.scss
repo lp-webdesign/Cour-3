@@ -248,4 +248,187 @@ header {
             background-color: #333333;
         }
     }
+    .carousel {
+        height: 250px;
+        position: relative;
+        // &:focus {
+        //     display: none;
+        // }
+        .carousel-cell {
+            width: 100%;
+            .work {
+                width: size(4, 12)-3%;
+                background-color: #efefef;
+                margin: 0 5px;
+                display: inline-block;
+            }
+            h3 {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            h4 {
+                margin-left: 10px;
+                padding-bottom: 10px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.flickity-enabled {
+    position: relative;
+}
+
+.flickity-enabled:focus {
+    outline: none;
+}
+
+.flickity-viewport {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.flickity-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.flickity-page-dots {
+    width: size(3, 5);
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+    .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 8px;
+        background: rgba(79, 79, 79, 0.25);
+        border-radius: 50%;
+        opacity: 0.25;
+        cursor: pointer;
+    }
+    .is-selected {
+        background: $black;
+    }
+}
+
+.flickity-button {
+    display: none;
+}
+
+.contact {
+    text-align: center;
+    background-image: url(../images/mountains.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 100px 0;
+    color: $black;
+    h2 {
+        font-size: 25px;
+        margin-bottom: 55px;
+    }
+    a {
+        padding: 12px 30px;
+        margin: 10px 0 10px 0;
+        border-radius: 40px;
+        text-transform: uppercase;
+        font-size: 12px;
+        border: solid 2px #333333;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        background-color: $white;
+    }
+}
+
+.clients {
+    width: size(3, 5);
+    margin: 100px auto;
+    color: $black;
+    position: relative;
+    h2 {
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 5%;
+            position: absolute;
+            bottom: -10px;
+            background-color: #333333;
+        }
+    }
+    .infos {
+        width: size(6, 12);
+        svg {
+            position: absolute;
+            width: 2%;
+            opacity: 0.2;
+        }
+        h3,
+        h4,
+        p {
+            margin: 0 0 10px size(1, 12);
+        }
+    }
+    .grid {
+        width: size(6, 12);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .border-b {
+            border-bottom: 1px solid rgba(207, 207, 207, 0.5);
+        }
+        .row {
+            width: 100%;
+            .border-l-r {
+                border-left: 1px solid rgba(207, 207, 207, 0.5);
+                border-right: 1px solid rgba(207, 207, 207, 0.5);
+            }
+            .col {
+                width: size(4, 12)-2%;
+                display: inline-block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.theme {
+    text-align: center;
+    background: linear-gradient(rgba(253, 253, 253, 0.75), rgba(253, 253, 253, 0.75)), url('../images/modern-house.jpg');
+    background-position: bottom;
+    background-size: cover;
+    padding: 100px 0;
+    color: $black;
+    h2 {
+        font-size: 25px;
+        margin-bottom: 55px;
+    }
+    a {
+        padding: 12px 30px;
+        margin: 10px 0 10px 0;
+        border-radius: 40px;
+        text-transform: uppercase;
+        font-size: 12px;
+        border: solid 2px #333333;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        background-color: $white;
+    }
 }

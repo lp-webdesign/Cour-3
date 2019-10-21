@@ -9,14 +9,16 @@ import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
+import jQueryBridget from "jquery-bridget";
 import Flickity from "flickity";
 // import '../assets/styles/variables.scss';
 
 console.log($('body'));
 
-$('.main-carousel').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true,
-    groupCells: true
-});
+Flickity.setJQuery($);
+jQueryBridget('flickity', Flickity, $);
+
+// $('.carousel').flickity({
+//     // options
+//     groupCells: true
+// });
