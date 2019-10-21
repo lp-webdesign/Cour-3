@@ -1,3 +1,19 @@
+/* -----------------------------------------------------------------------------
+* Global 13 
+* Header 65
+* Who 151
+* Services 200
+* Works 250
+* Contact 344
+* Clients 368
+* Theme 451
+* Footer 427
+----------------------------------------------------------------------------- */
+
+
+/* Global
+----------------------------------------------------------------------------- */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,800|PT+Serif&display=swap');
 $black: #333333;
 $white: #F6F6F6;
@@ -430,5 +446,96 @@ header {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         background-color: $white;
+    }
+}
+
+.footer {
+    background-color: $black;
+    padding: 100px 0 0 0;
+    .container {
+        margin: 0 auto;
+        width: size(3, 5);
+        position: relative;
+        .summary {
+            width: size(6, 12)-2%;
+            padding: 5px;
+            h4 {
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin: 0 0 20px 0;
+            }
+            p {
+                color: $white;
+                margin: 0 0 20px 0;
+            }
+            .media {
+                display: flex;
+                flex-direction: row;
+                svg {
+                    margin: 10px;
+                    padding: 10px;
+                    border-radius: 50px;
+                    background: #2c2c2c;
+                    &:hover {
+                        background: #494949;
+                        transition: all 0.5s linear;
+                        path {
+                            fill: $white;
+                        }
+                    }
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+        .contactUs {
+            position: absolute;
+            top: 0;
+            left: size(6, 12);
+            width: size(3, 12);
+            h4 {
+                color: #ffffff;
+            }
+            h5 {
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                color: $grey;
+                font-size: 11px;
+                font-weight: 700;
+                margin: 10px 0 0 0;
+            }
+            p {
+                color: $white;
+            }
+        }
+        .latest {
+            position: absolute;
+            top: 0;
+            left: size(9, 12);
+            width: size(3, 12);
+            h4 {
+                color: #ffffff;
+                margin-bottom: 10px;
+            }
+            .row {
+                width: 100%;
+                .col {
+                    width: size(4, 12)-2%;
+                    display: inline-block;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        p {
+            strong {
+                color: $grey;
+            }
+        }
     }
 }

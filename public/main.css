@@ -1,4 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:600,700,800|PT+Serif&display=swap);
+/* -----------------------------------------------------------------------------
+* Global 13 
+* Header 65
+* Who 151
+* Services 200
+* Works 250
+* Contact 344
+* Clients 368
+* Theme 451
+* Footer 427
+----------------------------------------------------------------------------- */
+/* Global
+----------------------------------------------------------------------------- */
 body {
   background-color: #F6F6F6; }
 
@@ -344,4 +357,72 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     background-color: #F6F6F6; }
+
+.footer {
+  background-color: #333333;
+  padding: 100px 0 0 0; }
+  .footer .container {
+    margin: 0 auto;
+    width: 60%;
+    position: relative; }
+    .footer .container .summary {
+      width: 48%;
+      padding: 5px; }
+      .footer .container .summary h4 {
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0 0 20px 0; }
+      .footer .container .summary p {
+        color: #F6F6F6;
+        margin: 0 0 20px 0; }
+      .footer .container .summary .media {
+        display: flex;
+        flex-direction: row; }
+        .footer .container .summary .media svg {
+          margin: 10px;
+          padding: 10px;
+          border-radius: 50px;
+          background: #2c2c2c; }
+          .footer .container .summary .media svg:hover {
+            background: #494949;
+            transition: all 0.5s linear; }
+            .footer .container .summary .media svg:hover path {
+              fill: #F6F6F6; }
+          .footer .container .summary .media svg path {
+            fill: #F6F6F6; }
+    .footer .container .contactUs {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 25%; }
+      .footer .container .contactUs h4 {
+        color: #ffffff; }
+      .footer .container .contactUs h5 {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        color: #FAFBFF;
+        font-size: 11px;
+        font-weight: 700;
+        margin: 10px 0 0 0; }
+      .footer .container .contactUs p {
+        color: #F6F6F6; }
+    .footer .container .latest {
+      position: absolute;
+      top: 0;
+      left: 75%;
+      width: 25%; }
+      .footer .container .latest h4 {
+        color: #ffffff;
+        margin-bottom: 10px; }
+      .footer .container .latest .row {
+        width: 100%; }
+        .footer .container .latest .row .col {
+          width: 31.33333%;
+          display: inline-block; }
+          .footer .container .latest .row .col img {
+            width: 100%; }
+  .footer .copyright {
+    text-align: center; }
+    .footer .copyright p strong {
+      color: #FAFBFF; }
 
