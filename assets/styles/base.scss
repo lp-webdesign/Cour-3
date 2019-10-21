@@ -12,17 +12,24 @@ $gutters:11.25rem;
 
 body {
     font-family: $primary-font;
+    background-color: $white;
 }
-
-
 
 h2 {
     font-family: $primary-font;
     font-size: 2.5rem;
     font-weight: 700;
     color: $black;
+    padding: $gutters 0 1.8rem 0 ;   
 }
 
 .d-block {
     display: block;
 }
+
+p {
+    font-family:$primary-font;
+    font-weight: 400;
+    color: rgb(80, 80, 80);
+}
+

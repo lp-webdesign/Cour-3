@@ -7,7 +7,7 @@ $('.projects__list--luxury').click(function() {
     //hide the current active images
     $('.projects__images--active-container').fadeOut().removeClass('projects__images--active-container');
     //show the new images
-    $('.projects__images--luxury').addClass('projects__images--active-container').css('display', 'flex').css('justify-content', 'space-between').fadeIn();
+    $('.projects__images--luxury').fadeIn().addClass('projects__images--active-container').css('display', 'flex').css('justify-content', 'space-between');
     
     console.log('in')
 });
@@ -22,7 +22,7 @@ $('.projects__list--tourism').click(function() {
     $('.projects__images--active-container').fadeOut().removeClass('projects__images--active-container');
     //show the new images
     // $('.projects__images--no-active').removeClass('.projects__images--no-active')
-    $('.projects__images--tourism').addClass('projects__images--active-container').css('display', 'flex').css('justify-content', 'space-between').fadeIn();
+    $('.projects__images--tourism').fadeIn().addClass('projects__images--active-container').css('display', 'flex').css('justify-content', 'space-between');
     
     console.log('in')
 });
@@ -38,6 +38,6 @@ $('.projects__list--food').click(function() {
     //show the new images
     $('.projects__images--no-active').removeClass('.projects__images--no-active')
 
-    $('.projects__images--food').addClass('projects__images--active-container').css('display', 'flex').css('justify-content', 'space-between').fadeIn();
+    $('.projects__images--food').fadeIn().addClass('projects__images--active-container').css('display', 'flex').css('justify-content', 'space-between');
     console.log('in')
 });
