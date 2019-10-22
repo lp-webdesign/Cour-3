@@ -94,7 +94,18 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./assets/styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n// console.log('Hello World');\n\n\n//# sourceURL=webpack:///./assets/bundle.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./assets/styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_script_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/script.js */ \"./assets/js/script.js\");\n/* harmony import */ var _js_script_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_script_js__WEBPACK_IMPORTED_MODULE_1__);\n// console.log('Hello World');\n\n\n\n//# sourceURL=webpack:///./assets/bundle.js?");
+
+/***/ }),
+
+/***/ "./assets/js/script.js":
+/*!*****************************!*\
+  !*** ./assets/js/script.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("$(document).ready(function () {\n  $('.arrow_up').click(function () {\n    $('h1').html('Amplify your <br/> blockchain team');\n    $('.header_img').prop('src', 'assets/images/header.png');\n  });\n  $('.arrow_down').click(function () {\n    $('h1').html('Virtual reality <br/> for your project');\n    $('.header_img').prop('src', 'assets/images/header2.png');\n  });\n});\n\n//# sourceURL=webpack:///./assets/js/script.js?");
 
 /***/ }),
 

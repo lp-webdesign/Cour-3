@@ -1,32 +1,266 @@
-:root
 
+// SOMMAIRE ---------------------------------------------------//
+
+
+// VARIABLES ---------------------------------------------------//
+
+$black: #1a1a1a;
+$white: #fafafa;
+$grey: #919191;
+
+// GENERAL ---------------------------------------------------//
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-  color: black;
+  color: $black;
+  font-family: 'Raleway', sans-serif;
 }
 
-.nav_logo {
-  width: 8%;
-}
+// SECTION HOME ---------------------------------------------------//
 
-.header_img {
-  width: 40%;
-}
+// NAV ---------------------------------------------------//
 
-.navbar ul {
-  max-width: 100%;
-  float: right;
-          li {
-            display: inline-block;
-            color: black;
+nav {
+  .nav_logo {
+    width: 7%;
+    padding: 35px;
+    float: left;
+    }
+    ul {
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0
+      }
+      li {
+        display: inline-block;
+        padding: 40px;
+        font-size: 15px;
+        }
+        .social-media {
+          float: right;
+          padding: 40px 10px;
+          margin-right: 30px;
           }
-            a {
-              text-decoration: none;
-
+          a {
+            text-decoration: none;
+            color: $grey;
             }
+              a:hover {
+                color: $black;
+                }
+}
+
+// HEADER ---------------------------------------------------//
+
+.container {
+  display: inline-block;
+  padding-top: 80px;
+  height: 100%;
+  }
+
+header {
+      .title {
+        display: inline-block;
+        margin:0 auto;
+        width: 400px;
+        padding: 150px 0;
+        margin-right: 50px;
+        }
+        h1 {
+         font-size: 50px;
+         font-weight: 500;
+         line-height: 1.2;
+         }
+         h2 {
+          color: $grey;
+          padding: 20px 0;
+          }
+          .img_home {
+            float:right;
+            width:500px;
+            height: 500px;
+            margin:0 auto;
+            }
+            .header_img {
+              max-width: 100%;
+              }
+  }
+
+  .arrows {
+    float:left;
+    width: 30px;
+    margin-right: 50px;
+    padding-top: 180px;
+    }
+    .arrow_ {
+      &up {
+      margin-bottom: 20px;
+      border: 2px solid black;
+      border-radius: 50%;
+      }
+      &down {
+      border: 2px solid black;
+      border-radius: 50%;
+      }
+    }
+
+  // SECTION PORTFOLIO ---------------------------------------------------//
+
+.portfolio {
+  width: 70%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+#portfolio {
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0;
+  }
+  p {
+    line-height: 1.5;
+    }
+    h3 {
+      font-size: 45px;
+      padding: 40px;
+      }
+      .description {
+        padding: 0 40px;
+        font-size: 18px;
+        }
+        .cards {
+          margin: 40px auto;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          grid-gap: 1em;
+          width: 72%;
+          }
+          .card {
+           width: 300px;
+           height: 400px;
+           padding: 25px;
+           margin: 0 5px;
+           display: inline-block;
+           border: 1px solid black;
+           }
+           .card:hover {
+             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            .text {
+             justify-content: space-between;
+             padding-top: 20px;
+             }
+              .card img {
+                width: 100%;
+              }
+}
+
+.button {
+  padding: 10px 0;
+  width: 90px;
+  border: none;
+  background: $black;
+  color: $white;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 40px;
+}
+
+  // SECTION CONTACT ---------------------------------------------------//
+
+
+#contact {
+  .contact{
+    width: 65%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+  }
+  form {
+    padding-bottom: 40px;
+  }
+    h3 {
+      font-size: 45px;
+      padding-bottom: 40px;
+      }
+      .contact {
+        input {
+          border: 1px solid $black;
+          height: 25px;
+          width: auto;
+          font-size: 16px;
+        }
+        input:focus {
+          outline : none;
+        }
+        form p {
+          font-size: 18px;
+          color: $black;
+          line-height: 3em;
+        }
+        textarea{
+          border: 1px solid $black;
+          height: 25px;
+          width: auto;
+          font-size: 16px;
+        }
+        textarea:focus {
+          outline : none;
+        }
+        .submit {
+          background: $black;
+          color: $white;
+          font-family: 'Raleway', sans-serif;
+          text-decoration: none;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          margin-top: 40px;
+          font-size: 13px;
+        }
+      }
+      .map {
+        margin: 0 auto;
+        padding-bottom: 20px;
+          -webkit-filter: grayscale(100%);
+             -moz-filter: grayscale(100%);
+              -ms-filter: grayscale(100%);
+               -o-filter: grayscale(100%);
+                  filter: grayscale(100%);
+        }
 
 }
 
-h1 {
-  font-size: 50px;
+
+
+  // FOOTER  ---------------------------------------------------//
+
+footer {
+  .footer {
+  	padding: 40px;
+    background: $black;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+    }
+    a {
+      padding: 0 50px;
+      color: $white;
+      text-decoration: none;
+    }
 }

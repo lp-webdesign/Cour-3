@@ -1,22 +1,216 @@
-:root
+html {
+  scroll-behavior: smooth; }
+
 body {
-  color: black; }
+  color: #1a1a1a;
+  font-family: 'Raleway', sans-serif; }
 
-.nav_logo {
-  width: 8%; }
+nav .nav_logo {
+  width: 7%;
+  padding: 35px;
+  float: left; }
 
-.header_img {
-  width: 40%; }
-
-.navbar ul {
+nav ul {
   max-width: 100%;
-  float: right; }
-  .navbar ul li {
-    display: inline-block;
-    color: black; }
-  .navbar ul a {
-    text-decoration: none; }
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0; }
 
-h1 {
-  font-size: 50px; }
+nav li {
+  display: inline-block;
+  padding: 40px;
+  font-size: 15px; }
+
+nav .social-media {
+  float: right;
+  padding: 40px 10px;
+  margin-right: 30px; }
+
+nav a {
+  text-decoration: none;
+  color: #919191; }
+
+nav a:hover {
+  color: #1a1a1a; }
+
+.container {
+  display: inline-block;
+  padding-top: 80px;
+  height: 100%; }
+
+header .title {
+  display: inline-block;
+  margin: 0 auto;
+  width: 400px;
+  padding: 150px 0;
+  margin-right: 50px; }
+
+header h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2; }
+
+header h2 {
+  color: #919191;
+  padding: 20px 0; }
+
+header .img_home {
+  float: right;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto; }
+
+header .header_img {
+  max-width: 100%; }
+
+.arrows {
+  float: left;
+  width: 30px;
+  margin-right: 50px;
+  padding-top: 180px; }
+
+.arrow_up {
+  margin-bottom: 20px;
+  border: 2px solid black;
+  border-radius: 50%; }
+
+.arrow_down {
+  border: 2px solid black;
+  border-radius: 50%; }
+
+.portfolio {
+  width: 70%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#portfolio h4 {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0; }
+
+#portfolio p {
+  line-height: 1.5; }
+
+#portfolio h3 {
+  font-size: 45px;
+  padding: 40px; }
+
+#portfolio .description {
+  padding: 0 40px;
+  font-size: 18px; }
+
+#portfolio .cards {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  width: 72%; }
+
+#portfolio .card {
+  width: 300px;
+  height: 400px;
+  padding: 25px;
+  margin: 0 5px;
+  display: inline-block;
+  border: 1px solid black; }
+
+#portfolio .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+#portfolio .text {
+  justify-content: space-between;
+  padding-top: 20px; }
+
+#portfolio .card img {
+  width: 100%; }
+
+.button {
+  padding: 10px 0;
+  width: 90px;
+  border: none;
+  background: #1a1a1a;
+  color: #fafafa;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 40px; }
+
+#contact .contact {
+  width: 65%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px; }
+
+#contact form {
+  padding-bottom: 40px; }
+
+#contact h3 {
+  font-size: 45px;
+  padding-bottom: 40px; }
+
+#contact .contact input {
+  border: 1px solid #1a1a1a;
+  height: 25px;
+  width: auto;
+  font-size: 16px; }
+
+#contact .contact input:focus {
+  outline: none; }
+
+#contact .contact form p {
+  font-size: 18px;
+  color: #1a1a1a;
+  line-height: 3em; }
+
+#contact .contact textarea {
+  border: 1px solid #1a1a1a;
+  height: 25px;
+  width: auto;
+  font-size: 16px; }
+
+#contact .contact textarea:focus {
+  outline: none; }
+
+#contact .contact .submit {
+  background: #1a1a1a;
+  color: #fafafa;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 40px;
+  font-size: 13px; }
+
+#contact .map {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+footer .footer {
+  padding: 40px;
+  background: #1a1a1a;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 40px; }
+
+footer a {
+  padding: 0 50px;
+  color: #fafafa;
+  text-decoration: none; }
 
