@@ -2,23 +2,30 @@
 @import "./font.scss";
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 .hero {
-    height: calc(100vh-75px);
+    background-image: url('https://www.spacex.com/sites/spacex/files/starship_cloud_launch1_moved_morechrome.jpg');
+    height: 55vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     div {
         position: relative;
+        height: 55vh;
     }
     h1 {
+        position: absolute;
         color: white;
         text-align: center;
         margin-top: auto;
-        z-index: 2;
-        position: absolute;
-        top: calc(50% - 75px);
+        top: 50%;
         left: 0;
         right: 0;
         font-size: 50px;
+        transform: translateY(-50%);
     }
     img {
         width: 100vw;
@@ -31,10 +38,51 @@ body {
     height: 200vh;
     z-index: 2;
     color: white;
+    .star-content {
+        .star-title {
+            padding-bottom: 25px;
+            border-bottom: 1px dashed #999;
+            font-weight: 500;
+            line-height: 0.8;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 60px;
+        }
+        .star-text {
+            // display: flex;
+            // justify-content: center;
+            p {
+                column-count: 2;
+                column-gap: 5rem;
+                width: 40vw;
+                margin: auto;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        .scd-par {
+            .star-title-2 {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-style: normal;
+                line-height: 0.8;
+                margin-top: 0;
+                margin-bottom: 20px;
+                font-size: 25px;
+                line-height: 1.2em;
+            }
+        }
+    }
     .background-video {
         video {
             width: 55%;
             padding-left: 35rem;
         }
     }
+}
+
+.youtube {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
 }
