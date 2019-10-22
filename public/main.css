@@ -1,0 +1,98 @@
+*, html, body {
+  padding: 0;
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+  html body {
+    width: 100vw;
+    height: 100vh; }
+    html body header {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 20px;
+      font-family: "NotCourierSans";
+      font-size: 12px; }
+      html body header .navbar__container {
+        list-style: none; }
+      html body header a:link {
+        text-decoration: none; }
+      html body header a:visited {
+        color: black; }
+      html body header nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        line-height: 30px; }
+        html body header nav li a:hover {
+          font-weight: bold;
+          transition-duration: 0.5s; }
+        html body header nav .navbar__link:hover .sous__navbar__link {
+          display: block; }
+        html body header nav .navbar__link {
+          vertical-align: top;
+          font-family: "NotCourierSans-Bold"; }
+        html body header nav .sous__navbar__link {
+          display: none;
+          font-family: "NotCourierSans";
+          padding-left: 50px; }
+    html body #main {
+      position: relative;
+      width: 100vw;
+      height: 50vh; }
+    html body .rectangle {
+      display: block;
+      width: 4em;
+      height: 0.5em;
+      background-color: #000000;
+      position: absolute;
+      transition: all 1s;
+      z-index: 100; }
+    html body .anime {
+      background-color: white;
+      width: 20em;
+      height: 8em;
+      animation-duration: .15s;
+      animation-name: rainbow;
+      animation-iteration-count: infinite; }
+
+@keyframes rainbow {
+  0% {
+    background-color: purple; }
+  20% {
+    background-color: pink; }
+  40% {
+    background-color: red; }
+  60% {
+    background-color: yellow; }
+  80% {
+    background-color: green; }
+  100% {
+    background-color: blue; } }
+    html body #projects {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 10px; }
+    html body .project__content__rozowy {
+      width: 33%; }
+    html body .project__content__dyskotek {
+      width: 33%; }
+    html body .project__content__gouffre__noir {
+      width: 33%; }
+    html body .project__ubahn {
+      width: 33%; }
+    html body .project__content__gaite__lyrique {
+      width: 33%; }
+    html body .project__content__magic__castle {
+      width: 33%; }
+    html body .presentation__projets {
+      padding: 20 100px; }
+  html .scroll {
+    list-style: none;
+    width: 4em;
+    height: 0.5em;
+    background-color: #000000;
+    position: fixed;
+    right: 6.5rem;
+    bottom: 1rem; }
+

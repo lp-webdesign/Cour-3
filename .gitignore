@@ -1,0 +1,38 @@
+# Caches de fichiers image Windows
+Thumbs.db
+ehthumbs.db
+
+# Fichier de configuration de dossier
+Desktop.ini
+
+# Corbeille utilisée sur les partages de fichiers
+$ RECYCLE.BIN /
+
+# # Format de projet basé sur un répertoire
+.idea /
+
+# Mac OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# L' icône doit se terminer par deux
+Icône
+
+# Miniatures
+._ *
+
+# Fichiers pouvant apparaître sur un disque externe
+.Spotlight-V100
+.Les trashs
+
+# Répertoires potentiellement créés sur un partage AFP distant
+.AppleDB
+.AppleDesktop
+Réseau  Trash  Folder
+ Articles temporaires
+.apdisk
+
+# PROJET
+yarn.lock
+node_modules /
