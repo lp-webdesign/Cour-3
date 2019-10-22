@@ -1,13 +1,159 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Work</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="assets/styles/reset.css">
+  <title>Godet Rémy - Étudiant Webdesign Sensoriel</title>
+  <link rel="icon" type="image/png" href="assets/styles/img/logo-new-ConvertImage.ico"/>
+  <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" href="assets/styles/responsive.css">
+  <link rel="stylesheet" href="assets/styles/public/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/animate.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="description" content="Bonjour, je m'appelle Godet Rémy, j'ai 19 ans et je suis actuellement en Licence Professionnel Webdesign Sensoriel et Stratégie de Création en Ligne">
 </head>
 <body>
+  <main>
+    <!-- HEADER -->
+    <header class="wow fadeIn">
+      <nav class="navbar cl-effect-1">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-logo"><h1 class="logo">RÉMY GODET</h1></a>
+            <a href="index.html" class="nav-logo nav-logo-deux"><h1 class="logo">RG</h1></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link about" href="about.html">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- CONTENT -->
+    <section class="content-all">
+      <a href="#owl" class="arrow-up wow fadeIn">
+        <span class="left-arm"></span>
+        <span class="right-arm"></span>
+        <span class="arrow-slide"></span>
+      </a>
+      <div class="content-navigation wow fadeIn">
+        <p class="un element active">01</p>
+        <p class="deux element">02</p>
+        <p class="trois element">03</p>
+      </div>
+      <section class="content-text">
+        <hr class="hr">
+        <hr class="hr hr-1">
+        <hr class="hr hr-2">
+        <img src="assets/styles/img/fluid.jpg" alt="image correspondant au projet numéro un, représentant un mockup avec l'application que j'ai pu designer en fond" class="img1">
+        <section class="content-data" data-tilt>
+          <a href="#" class="link one"><h1>Ice'Dream</h1></a>
+        </section>
+      </section>
+      <section class="content-text" id="owl">
+        <hr class="hr">
+        <hr class="hr hr-1">
+        <hr class="hr hr-2">
+        <img src="assets/styles/img/fluid_2.jpg" alt="image correspondant au projet numéro deux, représentant un mockup avec l'application que j'ai pu designer en fond" class="img2">
+        <section class="content-data" data-tilt>
+          <a href="projetOwl.html" class="link two wow fadeIn"><h1>Owl Music</h1></a>
+        </section>
+      </section>
+      <section class="content-text wow fadeIn">
+        <hr class="hr">
+        <hr class="hr hr-1">
+        <hr class="hr hr-2">
+        <img src="assets/styles/img/fluid_3.jpg" alt="image correspondant au projet numéro trois, représentant un mockup avec l'application que j'ai pu designer en fond" class="img3">
+        <section class="content-data" data-tilt>
+          <a href="#" class="link three wow fadeIn"><h1>Close to Me</h1></a>
+        </section>
+      </section>
+    </section>
+    <!-- FOOTER -->
+    <footer class="wow fadeIn">
+      <section class="content-footer">
+        <section class="right-footer">
+          <p class="link-footer">
+            +33 (0)6 66 73 04 15<br>
+            6 ROUTE DE SEGONZAC,<br>
+            16100 CHATEAUBERNARD,<br>
+            FRANCE<br>
+            <br>
+          </p>
+          <a href="mailto:rgodet18@gmail.com">rgodet18@gmail.com</a>
+        </section>
+        <section class="left-footer">
+          <a href="https://www.behance.net/rgodet18e511" class="link-footer" target="_blank"><span>BEH</span></a>
+          <a href="https://www.instagram.com/remygdt/?hl=fr" class="link-footer" target="_blank"><span>INS</span></a>
+          <a href="https://www.facebook.com/remy.godet.7" class="link-footer" target="_blank"><span>FBK</span></a>
+          <a href="https://dribbble.com/rgodet" class="link-footer" target="_blank"><span>DRI</span></a>
+        </section>
+      </section>
+    </footer>
 
+  </main>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  <script src="assets/styles/js/tilt.jquery.min.js"></script>
+  <script src="assets/styles/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+  // HOVER TITLE APPARITION IMG
+  $(document).ready(function(){
+    $(".one").mouseenter(function(){
+      $(".img1").css("opacity", "1");
+      $("")
+    });
+    $(".one").mouseleave(function(){
+      $(".img1").css("opacity", "0");
+    });
+    $(".two").mouseenter(function(){
+      $(".img2").css("opacity", "1");
+    });
+    $(".two").mouseleave(function(){
+      $(".img2").css("opacity", "0");
+    });
+    $(".three").mouseenter(function(){
+      $(".img3").css("opacity", "1");
+    });
+    $(".three").mouseleave(function(){
+      $(".img3").css("opacity", "0");
+    });
+  });
+
+  // NUMBRE PROJECTS CHANGEMENT
+  $(window).scroll(function() {
+    var $height = $(window).scrollTop();
+    if($height < 540 ) {
+      $('.un').addClass('active');
+      $('.arrow-up').css('opacity', '1');
+    } else{
+      $('.un').removeClass('active');
+    }
+
+    if($height > 540 && $height < 1350) {
+      $('.deux').addClass('active');
+      $('.arrow-up').css('opacity', '0');
+    } else{
+      $('.deux').removeClass('active');
+    }
+
+    if($height > 1350){
+      $('.trois').addClass('active');
+      $('.arrow-up').css('opacity', '0');
+    }else{
+      $('.trois').removeClass('active');
+    }
+  });
+
+
+
+  </script>
 </body>
 </html>
