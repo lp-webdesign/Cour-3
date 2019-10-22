@@ -48,7 +48,8 @@ h1 {
 
 .nav_el {
   display: inline-block;
-  padding: 1rem; }
+  padding: 1rem;
+  font-weight: lighter; }
   .nav_el a:hover {
     transition: 0.5s ease;
     opacity: 0.5; }
@@ -225,4 +226,20 @@ footer {
 
 .footer_icon:hover {
   opacity: 0.5; }
+
+@media screen and (max-width: 1920px) {
+  article p {
+    bottom: -44%; }
+  .products_container {
+    width: 85%; } }
+
+@media screen and (max-width: 1024px) {
+  #articles div {
+    transform: translate(-50%);
+    width: 800px;
+    height: 500px;
+    display: flex; }
+  article {
+    width: 300px;
+    height: 200px; } }
 

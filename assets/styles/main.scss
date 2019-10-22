@@ -53,6 +53,7 @@ h1 {
 .nav_el {
     display: inline-block;
     padding: 1rem;
+    font-weight: lighter;
     a:hover {
         transition: $transition;
         opacity: 0.5;
@@ -223,8 +224,6 @@ article:hover h3 {
     }
 }
 
-
-
 /*Footer-------------------------------------------------------------------*/
 footer {
     background-color: $red;
@@ -256,3 +255,29 @@ footer {
     opacity: 0.5;
 }
 
+@media screen and (max-width: 1920px) {
+    article {
+        p {
+            bottom: -44%;
+        }
+    }
+
+    .products_container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #articles {
+        div {
+            transform: translate(-50%);
+            width: 800px;
+            height: 500px;
+            display: flex;
+        }
+    }
+    article {
+        width: 300px;
+        height: 200px;
+    }
+}
