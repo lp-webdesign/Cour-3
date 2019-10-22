@@ -203,48 +203,48 @@ h4 {
           height: 25px;
           width: auto;
           font-size: 16px;
-        }
-        input:focus {
-          outline : none;
-        }
-        form p {
-          font-size: 18px;
-          color: $black;
-          line-height: 3em;
-        }
-        textarea{
-          border: 1px solid $black;
-          height: 25px;
-          width: auto;
-          font-size: 16px;
-        }
-        textarea:focus {
-          outline : none;
-        }
-        .submit {
-          background: $black;
-          color: $white;
-          font-family: 'Raleway', sans-serif;
-          text-decoration: none;
-          text-align: center;
-          margin-left: auto;
-          margin-right: auto;
-          display: block;
-          margin-top: 40px;
-          font-size: 13px;
-        }
+          }
+          input:focus {
+            outline : none;
+            }
+            form p {
+              font-size: 18px;
+              color: $black;
+              line-height: 3em;
+              }
+              textarea{
+                border: 1px solid $black;
+                height: 25px;
+                width: auto;
+                font-size: 16px;
+                }
+                textarea:focus {
+                  outline : none;
+                  }
+                  .submit {
+                    background: $black;
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    text-decoration: none;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    margin-top: 40px;
+                    font-size: 13px;
+                  }
       }
-      .map {
-        margin: 0 auto;
-        padding-bottom: 20px;
+.map {
+  margin: 0 auto;
+  padding-bottom: 20px;
           -webkit-filter: grayscale(100%);
              -moz-filter: grayscale(100%);
               -ms-filter: grayscale(100%);
                -o-filter: grayscale(100%);
                   filter: grayscale(100%);
-        }
-
+  }
 }
+
 
 
 
@@ -263,4 +263,54 @@ footer {
       color: $white;
       text-decoration: none;
     }
+}
+
+
+
+  // RESPONSIVE  ---------------------------------------------------//
+
+@media screen and (max-width: 600px) {
+  .nav {
+    max-width: 100%;
+    display: block;
+    a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    background: #eee;
+    li {
+      float: none;
+    }
+  }
+  .menuToggle {
+    display: inline-block;
+  }
+  .arrows {
+    display: none;
+  }
+  .container {
+    display: inline;
+  }
+  .portfolio{
+    padding:0;
+    margin:0;
+  }
+  .map {
+    display: none;
+  }
+  .footer {
+    max-width: 100%;
+    font-size: 13px;
+    a {
+      padding: 0;
+      display: block;
+      padding-bottom: 10px;
+
+    }
+  }
 }

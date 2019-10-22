@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(document).ready(function () {\n  $('.arrow_up').click(function () {\n    $('h1').html('Amplify your <br/> blockchain team');\n    $('.header_img').prop('src', 'assets/images/header.png');\n  });\n  $('.arrow_down').click(function () {\n    $('h1').html('Virtual reality <br/> for your project');\n    $('.header_img').prop('src', 'assets/images/header2.png');\n  });\n});\n\n//# sourceURL=webpack:///./assets/js/script.js?");
+eval("$(document).ready(function () {\n  $('.arrow_up').click(function () {\n    $('h1').html('Amplify your <br/> blockchain team');\n    $('.header_img').prop('src', 'assets/images/header.png');\n  });\n  $('.arrow_down').click(function () {\n    $('h1').html('Virtual reality <br/> for your project');\n    $('.header_img').prop('src', 'assets/images/header2.png');\n  });\n  $(function () {\n    $('.menuToggle').on('click', function () {\n      $('.menu').slideToggle(300, function () {\n        if ($(this).css('display') === 'none') {\n          $(this).removeAttr('style');\n        }\n      });\n    });\n  });\n});\n\n//# sourceURL=webpack:///./assets/js/script.js?");
 
 /***/ }),
 

@@ -214,3 +214,36 @@ footer a {
   color: #fafafa;
   text-decoration: none; }
 
+@media screen and (max-width: 600px) {
+  .nav {
+    max-width: 100%;
+    display: block; }
+    .nav a {
+      float: none;
+      display: block;
+      text-align: left; }
+  .menu {
+    display: none;
+    position: absolute;
+    background: #eee; }
+    .menu li {
+      float: none; }
+  .menuToggle {
+    display: inline-block; }
+  .arrows {
+    display: none; }
+  .container {
+    display: inline; }
+  .portfolio {
+    padding: 0;
+    margin: 0; }
+  .map {
+    display: none; }
+  .footer {
+    max-width: 100%;
+    font-size: 13px; }
+    .footer a {
+      padding: 0;
+      display: block;
+      padding-bottom: 10px; } }
+
