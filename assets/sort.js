@@ -5,10 +5,6 @@ export function sort() {
 
     var iso = new Isotope( elem, {
       itemSelector: '.grid-item',
-      getSortData: {
-        category: '[data-category]',
-      },
-      sortBy: 'category',
       percentPosition: true,
       layoutMode: 'masonry'
     });

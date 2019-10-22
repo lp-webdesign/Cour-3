@@ -109,7 +109,7 @@ h1 {
 #articles div {
   position: relative;
   left: 50%;
-  transform: translate(-50%, 40%);
+  transform: translate(-50%, 10%);
   width: 1000px;
   height: 600px;
   display: flex;
@@ -166,13 +166,15 @@ article:hover h3 {
 
 /*Products-------------------------------------------------------------------*/
 .products_container {
-  margin: 0 auto;
-  width: 60%; }
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%; }
   .products_container .product {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 3rem; }
+    margin: 2rem; }
     .products_container .product img {
       width: 250px;
       height: 250px;
