@@ -6,8 +6,10 @@
 
     &__post {
         // position: relative;
-        // display: flex;
-        // justify-content: space-evenly;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // text-align: center;
         margin: 5rem 0;
     }
 
@@ -83,6 +85,18 @@
             font-size: 0.7rem;
             font-weight: 700;
             }
+    }
+
+}
+
+@media screen and (max-width: 1460px) {
+    body {
+        .actus {
+            &__text {
+                margin-top: 50px;
+                width: 100%;
+            }
+        }
     }
 
 }
