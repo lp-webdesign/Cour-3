@@ -66,40 +66,50 @@ var food_img = $('.projects__images--food')
  
 
         //SOLUTION 2 => TRYING TO USE CLASS 
-        //PB: LIST UNDEFINED
+        //PB: LIST  AND IMG UNDEFINED IN METHOD
 
 // class Projet {
 //     constructor (list, img) {
 //         this.list = list;
 //         this.img = img;
+
 //     }
 
+
 //      showList () {
-//    //click on list (li) : run function
-//    $(this.list).click(function() {
-//        console.log(this.list)//undefined ??
-//        console.log(this.img) //undefined ??
-//     //remove the active class on li (color-primary)
-//     $('.projects__list--active').removeClass('projects__list--active');
-//     //add the active class on this li (color-primary)
-//     $(this.list).addClass('projects__list--active')
-//     //hide the current active images
-//     $('.projects__images--active-container').fadeOut().removeClass('projects__images--active-container');
-//     $('.projects__images--no-active').removeClass('.projects__images--no-active')
-    
-//     //show the new images
-//     $(this.img).fadeIn().addClass('projects__images--active-container').css('display', 'flex').css('justify-content', 'space-between');
-//     console.log('in')
-//     });
+//         //click on list (li) : run function
+//         $(this.list).click(function() {
+
+//             console.log(this.list)//undefined ??
+//             console.log(this.img) //undefined ??
+//             //remove the active class on li (color-primary)
+//             $('.projects__list--active').removeClass('projects__list--active');
+//             //add the active class on this li (color-primary)
+//             $(this).addClass('projects__list--active')
+//             //hide the current active images
+//             $('.projects__images--active-container').fadeOut().removeClass('projects__images--active-container');
+//             $('.projects__images--no-active').removeClass('.projects__images--no-active')
+            
+//             //show the new images
+//             $(this).fadeIn().addClass('projects__images--active-container').css('display', 'flex').css('justify-content', 'space-between');
+//             console.log('in')
+//         });
 //     }
  
 
 // }
 
+
 // const luxury = new Projet(luxury_list, luxury_img)
 // const tourism = new Projet(tourism_list, tourism_img)
 // const food = new Projet(food_list, food_img)
 
+//     //Doing tests
+// console.log(luxury.img) // OK
+// console.log(food.img) //OK
+// console.log(luxury.list) //OK
+
+//     //Running class methods
 // luxury.showList ()
 // tourism.showList ()
 // food.showList ()
